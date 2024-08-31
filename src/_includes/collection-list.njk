@@ -1,0 +1,6 @@
+<ul>
+  {% for item in collection %}
+    <hr><li><a href="{{ item.url }}"><small>{{ item.date | dateFilter }} {{ item.date | timeFilter }}</small> <br><br><strong> {{ item.data.title }}</strong></a></li>
+    <small>{{ item.content | truncate(80,true) | safe }}</small>
+  {% endfor %}
+</ul>

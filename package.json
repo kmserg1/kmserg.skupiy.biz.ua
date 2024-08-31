@@ -1,0 +1,30 @@
+{
+  "name": "eleventy-data",
+  "version": "1.0.0",
+  "description": "This is the repo used in my article on Architecting Data in Eleventy.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy --input=src",
+    "start": "npx eleventy --input=src --serve",
+    "watch": "npx eleventy --input=src --watch",
+    "debug": "DEBUG=* npx eleventy --input=src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siakaramalegos/eleventy-data-tutorial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/siakaramalegos/eleventy-data-tutorial/issues"
+  },
+  "homepage": "https://github.com/siakaramalegos/eleventy-data-tutorial#readme",
+  "dependencies": {
+    "debug": "^4.3.6",
+    "moment": "^2.30.1"
+  }
+}

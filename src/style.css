@@ -38,20 +38,46 @@ nav li {
 
 .post {
   line-height: 1.5;
+  font-size: 1.5em;
+}
+
+.item {
+  list-style-type: none;
+  display: flex;
+}
+.itemLeft {
+  width: 7%; /* Ширина контейнера */
+  border-right: 1px solid;
+  padding-top: 1em;
+}
+.itemRight {
+  margin-left: 1em;
+  padding-top: 1em;
 }
 
 .pagin {
   display: flex;
 }
+.leftPagin {
+  width: 7%;
+}
+.rightPagin {
+  width: 7%;
+}
+.centerPagin {
+  width: 7%;
+}
+
+
 .SBottom {
 /*border: 1px solid #666;*/
 /*  clear:both;*/
   display: flex;
+  font-size: 0.75em;
 }
 
 
 .SBottomItem {
-font-size: 0.5em;
 flex: 1;
 padding: 8px;
 margin: 10px; 

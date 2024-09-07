@@ -1,31 +1,22 @@
 
 <ul>
   {% for item in pagination.items %}
-    <hr><li><a href="{{ item.url }}"><small>{{ item.date | dateFilter }} {{ item.date | timeFilter }}</small> <br><br><strong> {{ item.data.title }}</strong></a></li>
+
+    <div class="item">
+	<div class="itemLeft">
+	<li><a href="{{ item.url }}"><small>{{ item.date | dateFilter }}<br>{{ item.time | timeFilter | truncate(5,true,'')}}</small>
+	</div>
+	<div class="itemRight">
+        <strong> {{ item.data.title }}</strong></a></li>
 	{% set coverImage = item.data.cover_image %} 
 	{% if coverImage %} 
 	<img src="/images/{{ coverImage }}"  width="100"   height="100" />
 	{% endif %} 
-
-    <small>{{ item.content | truncate(80,true) | safe }}</small>
+       <small>{{ item.content | truncate(80,true) | safe }}</small>
+       </div>
+    </div>
   {% endfor %}
 </ul>
 <hr>
 
-<nav>
-<div class="pagin">
-<p>
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">
-	<span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
-    </a>
-  {% endif %}
-&nbsp; &nbsp;
-  {% if pagination.href.next %}
-     <a href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">
-       <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
-     </a>
-   {% endif %}
-</p>
-</div>
-</nav>
+{% include "partials/paginations.njk" %}

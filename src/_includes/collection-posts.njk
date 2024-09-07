@@ -11,16 +11,5 @@
   {% endfor %}
 </ul>
 <hr>
-<nav>
-  {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}{{ paginationAnchor }}" data-direction="backwards">
-	<span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
-    </a>
-  {% endif %}
-&nbsp;&nbsp;&nbsp;&nbsp;
-  {% if pagination.href.next %}
-     <a href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">
-       <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
-     </a>
-   {% endif %}
-</nav>
+
+{% include "partials/paginations.njk" %}

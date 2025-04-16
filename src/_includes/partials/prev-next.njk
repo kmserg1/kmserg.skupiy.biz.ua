@@ -1,0 +1,16 @@
+<div class="pagin">
+    <div class="leftPagin">
+        {% if nextPost %}
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title }} << Новіше: </a>
+        {% endif %}
+    </div>
+    <div class="centerPagin">
+        &nbsp;
+    </div>    
+    <div class="rightPagin">
+        {% if previousPost %}
+            <a href="{{ previousPost.url }}">Старіше: >> {{ previousPost.data.title }}</a>
+        {% endif %}
+    </div>
+</div>
+

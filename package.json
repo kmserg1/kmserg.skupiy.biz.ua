@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/kmserg1/kmserg.skupiy.biz.ua#readme",
   "dependencies": {
-    "debug": "^4.3.6",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "debug": "^4.3.7",
     "moment": "^2.30.1"
   }
 }

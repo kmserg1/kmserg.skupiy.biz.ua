@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: Ідея
+pagination:
+  data: collections.сюжет
+  size: 5
+  alias: сюжет
+paginationPrevText: 'Новіші'
+paginationNextText: 'Старіші'
+---
+
+<h1>{{ title }}</h1>
+
+{% set collection = collections.сюжет %}
+{% include "collection-posts.njk" %}

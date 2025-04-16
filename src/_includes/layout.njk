@@ -16,15 +16,30 @@ site:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ pageTitle }}</title>
+  {% include "partials/meta-info.njk" %}
   <link rel="shortcut icon" href="/images/avatar.svg" type="image/x-icon">
   <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
 <div class="SWrap">
-{% include "partials/site-head.njk" %}
-  {{ content | safe }}
-{% include "partials/site-bottom.njk" %}
+  
+  <div class="SHWrap">
+    {% include "partials/site-head.njk" %}
+  </div>
+
+  <div class="SMainWrap"> 
+    <div class="SMainLeft">
+      {{ content | safe }}
+    </div>
+    <div class="SMainRight">
+	{% include "partials/tag-list.njk" %}
+    </div>
+  </div>
+  
+  <div class="SBottomWrap"> 
+    {% include "partials/site-bottom.njk" %}
+  </div>
 
 </div>
 </body>

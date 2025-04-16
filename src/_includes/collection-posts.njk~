@@ -1,0 +1,21 @@
+<br><br>
+{% include "partials/paginations.njk" %}
+<br>
+<div class="items">
+  {% for item in pagination.items %}
+		<div class="itemLeft">
+			<a href="{{ item.url }}"> <small>{{ item.date | dateFilter }}<br>{{ item.time | timeFilter | truncate(6,true,'')}} </small></a>
+		</div>
+		<div class="itemRight">
+			{% set coverImage = item.data.cover_image %} 
+			{% if coverImage %} 
+				<img class="itemImage" src="/images/{{ coverImage }}" alt="illustration for article" />
+			{% endif %} 
+			<a  href="{{ item.url }}"><strong> {{ item.data.title }}</strong><br>
+   			<small>{{ item.content | truncate(80,true) | safe }}</small>
+			</a>
+       		</div>
+  {% endfor %}
+</div>
+
+{% include "partials/paginations.njk" %}

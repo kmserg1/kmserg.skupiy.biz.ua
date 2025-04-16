@@ -1,0 +1,35 @@
+---
+layout: layout.njk
+---
+{% set previousPost = collections.commons | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.commons | getNextCollectionItem(page) %}
+<br><br><br>
+{% include "partials/prev-next.njk" %}
+
+
+<h1>{{ title }}</h1>
+Теги: {% for tag in tags%}
+    <a href="/{{ tag }}">{{ tag }}</a>&nbsp;
+{% endfor %}
+
+<div class="post">
+{{ content | safe }}
+</div>
+<br><br><br><br><br><br>
+<hr>
+<script>
+var idcomments_acct = '7f350cb30201a48464c81710d119cd0c';
+var idcomments_post_id;
+var idcomments_post_url;
+</script>
+<script type="text/javascript" src="https://www.intensedebate.com/js/genericLinkWrapperV2.js"></script>
+
+<hr>
+
+<script>
+var idcomments_acct = '7f350cb30201a48464c81710d119cd0c';
+var idcomments_post_id;
+var idcomments_post_url;
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>

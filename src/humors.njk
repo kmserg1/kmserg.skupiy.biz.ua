@@ -4,6 +4,7 @@ title: Юмор
 tags: ['nav']
 pagination:
   data: collections.humors
+  reverse: true
   size: 5
   alias: humors
 paginationPrevText: 'Новіші'
@@ -12,5 +13,9 @@ paginationNextText: 'Старіші'
 
 <h1>{{ title }}</h1>
 
-{% set collection = collections.humors %}
-{% include "collection-humors.njk" %}
+Моя колекція юмору. Я її збирав декілька років. <br>
+Попередження: Є кілька записів російською.
+
+
+{% set collection = collections.humors %}&nbsp;&nbsp;&nbsp;
+{% include "collection-posts.njk" %}<br>

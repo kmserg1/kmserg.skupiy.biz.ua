@@ -1,0 +1,528 @@
+2024-09-14T09:02:13.046Z Eleventy:cmd command: eleventy { _: [], quiet: null, version: false, watch: false, dryrun: false, help: false, serve: true, incremental: false, 'ignore-initial': false, input: 'src' }
+2024-09-14T09:02:13.089Z Eleventy:EventBus Setting up global EventBus.
+2024-09-14T09:02:13.245Z Eleventy:UserConfig Resetting EleventyConfig to initial values.
+2024-09-14T09:02:13.250Z Eleventy:UserConfig Adding universal filter 'slug'
+2024-09-14T09:02:13.251Z Eleventy:UserConfig Adding universal filter 'slugify'
+2024-09-14T09:02:13.251Z Eleventy:UserConfig Adding universal filter 'url'
+2024-09-14T09:02:13.251Z Eleventy:UserConfig Adding universal filter 'log'
+2024-09-14T09:02:13.251Z Eleventy:UserConfig Adding universal filter 'serverlessUrl'
+2024-09-14T09:02:13.251Z Eleventy:UserConfig Adding universal filter 'getCollectionItemIndex'
+2024-09-14T09:02:13.251Z Eleventy:UserConfig Adding universal filter 'getCollectionItem'
+2024-09-14T09:02:13.251Z Eleventy:UserConfig Adding universal filter 'getPreviousCollectionItem'
+2024-09-14T09:02:13.251Z Eleventy:UserConfig Adding universal filter 'getNextCollectionItem'
+2024-09-14T09:02:13.252Z Eleventy:TemplateConfig rootConfig { templateFormats: [ 'liquid',   'ejs', 'md',       'hbs', 'mustache', 'haml', 'pug',      'njk', 'html',     '11ty.js' ], pathPrefix: '/', markdownTemplateEngine: 'liquid', htmlTemplateEngine: 'liquid', htmlOutputSuffix: '-o', dataFileSuffixes: [ '.11tydata', '' ], dataFileDirBaseNameOverride: false, keys: { package: 'pkg', layout: 'layout', permalink: 'permalink', permalinkRoot: 'permalinkBypassOutputDir', engineOverride: 'templateEngineOverride', computed: 'eleventyComputed' }, dir: { input: '.', includes: '_includes', data: '_data', output: '_site' }, handlebarsHelpers: {}, nunjucksFilters: {} }
+2024-09-14T09:02:13.253Z Eleventy Setting process.env.ELEVENTY_ROOT: '/home/kmserg/studying/blog/kmserg.skupiy.biz.ua'
+2024-09-14T09:02:13.254Z Eleventy:TemplateConfig Merging config with .eleventy.js
+2024-09-14T09:02:13.260Z Eleventy:UserConfig Adding universal filter 'dateFilter'
+2024-09-14T09:02:13.260Z Eleventy:UserConfig Adding universal filter 'timeFilter'
+2024-09-14T09:02:13.260Z Eleventy:UserConfig Adding universal filter 'w3DateFilter'
+2024-09-14T09:02:13.261Z Eleventy:TemplateConfig overrides: {}
+2024-09-14T09:02:13.263Z Eleventy:TemplateConfig Current configuration: { pathPrefix: '/', markdownTemplateEngine: 'liquid', htmlTemplateEngine: 'liquid', htmlOutputSuffix: '-o', dataFileSuffixes: [ '.11tydata', '' ], dataFileDirBaseNameOverride: false, keys: { package: 'pkg', layout: 'layout', permalink: 'permalink', permalinkRoot: 'permalinkBypassOutputDir', engineOverride: 'templateEngineOverride', computed: 'eleventyComputed' }, dir: { input: '.', includes: '_includes', data: '_data', output: '_site' }, handlebarsHelpers: { slug: [Function (anonymous)], slugify: [Function (anonymous)], url: [Function (anonymous)], log: [Function (anonymous)], serverlessUrl: [Function (anonymous)], getCollectionItemIndex: [Function (anonymous)], getCollectionItem: [Function (anonymous)], getPreviousCollectionItem: [Function (anonymous)], getNextCollectionItem: [Function (anonymous)], dateFilter: [Function (anonymous)], timeFilter: [Function (anonymous)], w3DateFilter: [Function (anonymous)] }, nunjucksFilters: { slug: [Function (anonymous)], slugify: [Function (anonymous)], url: [Function (anonymous)], log: [Function (anonymous)], serverlessUrl: [Function (anonymous)], getCollectionItemIndex: [Function (anonymous)], getCollectionItem: [Function (anonymous)], getPreviousCollectionItem: [Function (anonymous)], getNextCollectionItem: [Function (anonymous)], dateFilter: [Function (anonymous)], timeFilter: [Function (anonymous)], w3DateFilter: [Function (anonymous)] }, templateFormats: [ 'liquid',   'ejs', 'md',       'hbs', 'mustache', 'haml', 'pug',      'njk', 'html',     '11ty.js' ], transforms: {}, linters: {}, globalData: {}, layoutAliases: {}, layoutResolution: true, passthroughCopies: { 'src/style.css': { outputPath: true, copyOptions: {} }, './src/images/': { outputPath: true, copyOptions: {} }, '*.html': { outputPath: true, copyOptions: {} } }, liquidOptions: {}, liquidTags: {}, liquidFilters: { slug: [Function (anonymous)], slugify: [Function (anonymous)], url: [Function (anonymous)], log: [Function (anonymous)], serverlessUrl: [Function (anonymous)], getCollectionItemIndex: [Function (anonymous)], getCollectionItem: [Function (anonymous)], getPreviousCollectionItem: [Function (anonymous)], getNextCollectionItem: [Function (anonymous)], dateFilter: [Function (anonymous)], timeFilter: [Function (anonymous)], w3DateFilter: [Function (anonymous)] }, liquidShortcodes: {}, liquidPairedShortcodes: {}, nunjucksEnvironmentOptions: {}, nunjucksPrecompiledTemplates: {}, nunjucksAsyncFilters: {}, nunjucksTags: {}, nunjucksGlobals: {}, nunjucksAsyncShortcodes: {}, nunjucksShortcodes: {}, nunjucksAsyncPairedShortcodes: {}, nunjucksPairedShortcodes: {}, handlebarsShortcodes: {}, handlebarsPairedShortcodes: {}, javascriptFunctions: { slug: [Function (anonymous)], slugify: [Function (anonymous)], url: [Function (anonymous)], log: [Function (anonymous)], serverlessUrl: [Function (anonymous)], getCollectionItemIndex: [Function (anonymous)], getCollectionItem: [Function (anonymous)], getPreviousCollectionItem: [Function (anonymous)], getNextCollectionItem: [Function (anonymous)], dateFilter: [Function (anonymous)], timeFilter: [Function (anonymous)], w3DateFilter: [Function (anonymous)] }, pugOptions: {}, ejsOptions: {}, markdownHighlighter: null, libraryOverrides: {}, dynamicPermalinks: true, useGitIgnore: true, ignores: Set(2) { '**/node_modules/**', '.git/**' }, watchIgnores: Set(2) { '**/node_modules/**', '.git/**' }, dataDeepMerge: true, watchJavaScriptDependencies: true, additionalWatchTargets: [], serverOptions: {}, chokidarConfig: {}, watchThrottleWaitTime: 0, frontMatterParsingOptions: undefined, dataExtensions: Map(0) {}, extensionMap: Set(0) {}, quietMode: false, events: AsyncEventEmitter { _events: [Object: null prototype] {}, _eventsCount: 0, _maxListeners: undefined, [Symbol(kCapture)]: false }, benchmarkManager: BenchmarkManager { benchmarkGroups: { Configuration: [BenchmarkGroup], Aggregate: [BenchmarkGroup] }, isVerbose: true, start: 286.7313829958439 }, plugins: [], useTemplateCache: true, precompiledCollections: {}, dataFilterSelectors: Set(0) {}, libraryAmendments: {}, serverPassthroughCopyBehavior: 'copy', urlTransforms: [] }
+2024-09-14T09:02:13.263Z Eleventy Eleventy warm up time (in ms) 304.9999549984932
+2024-09-14T09:02:13.267Z Eleventy:TemplatePassthroughManager Resetting counts to 0
+2024-09-14T09:02:13.269Z Eleventy:EleventyFiles .gitignore,.eleventyignore,src/.eleventyignore ignoring: ./_site/**
+2024-09-14T09:02:13.269Z Eleventy:EleventyFiles .gitignore,.eleventyignore,src/.eleventyignore ignoring: ./node_modules/**
+2024-09-14T09:02:13.269Z Eleventy:EleventyFiles .gitignore,.eleventyignore,src/.eleventyignore ignoring: ./package-lock.json
+2024-09-14T09:02:13.269Z Eleventy:EleventyFiles .gitignore,.eleventyignore,src/.eleventyignore ignoring: ./*.log
+2024-09-14T09:02:13.269Z Eleventy:EleventyFiles .gitignore,.eleventyignore,src/.eleventyignore ignoring: ./npm-debug.*
+2024-09-14T09:02:13.269Z Eleventy:EleventyFiles .gitignore,.eleventyignore,src/.eleventyignore ignoring: ./Thumbs.db
+2024-09-14T09:02:13.269Z Eleventy:EleventyFiles .gitignore,.eleventyignore,src/.eleventyignore ignoring: ./.cache
+2024-09-14T09:02:13.270Z Eleventy Directories:
+Input (Dir): src
+Input (File): src
+Data: src/_data
+Includes: src/_includes
+Layouts: undefined
+Output: _site
+Template Formats: liquid,ejs,md,hbs,mustache,haml,pug,njk,html,11ty.js
+Verbose Output: false
+2024-09-14T09:02:13.276Z Eleventy:EleventyFiles Searching for: [ './src/**/*.{liquid,ejs,md,hbs,mustache,haml,pug,njk,html,11ty.js,11ty.cjs}' ]
+2024-09-14T09:02:13.276Z Eleventy:FastGlobManager Glob search ('templates') searching for: [ './src/**/*.{liquid,ejs,md,hbs,mustache,haml,pug,njk,html,11ty.js,11ty.cjs}' ]
+2024-09-14T09:02:13.276Z Eleventy:FastGlobManager Glob search ('templates') ignoring: [ '_site/**', 'node_modules/**', 'package-lock.json', '*.log', 'npm-debug.*', 'Thumbs.db', '.cache', 'src/_includes/**', 'src/_data/**', '**/node_modules/**', '.git/**' ]
+2024-09-14T09:02:13.297Z Eleventy:TemplatePassthroughManager TemplatePassthrough copy started.
+2024-09-14T09:02:13.297Z Eleventy:TemplatePassthroughManager `addPassthroughCopy` config API paths: { 'src/style.css': { outputPath: true, copyOptions: {} }, './src/images/': { outputPath: true, copyOptions: {} }, '*.html': { outputPath: true, copyOptions: {} } }
+2024-09-14T09:02:13.297Z Eleventy:TemplatePassthroughManager `addPassthroughCopy` config API normalized paths: [ { inputPath: './src/style.css', outputPath: true, copyOptions: {} }, { inputPath: './src/images/', outputPath: true, copyOptions: {} }, { inputPath: './*.html', outputPath: true, copyOptions: {} } ]
+2024-09-14T09:02:13.298Z Eleventy:TemplatePassthroughManager TemplatePassthrough copying from config: { inputPath: './src/style.css', outputPath: true, copyOptions: {} }
+2024-09-14T09:02:13.298Z Eleventy:TemplatePassthroughManager TemplatePassthrough copying from config: { inputPath: './src/images/', outputPath: true, copyOptions: {} }
+2024-09-14T09:02:13.298Z Eleventy:TemplatePassthroughManager TemplatePassthrough copying from config: { inputPath: './*.html', outputPath: true, copyOptions: {} }
+2024-09-14T09:02:13.298Z Eleventy:TemplatePassthrough Copying './src/style.css'
+2024-09-14T09:02:13.299Z Eleventy:TemplatePassthrough Copying './src/images/'
+2024-09-14T09:02:13.299Z Eleventy:TemplatePassthrough Copying './*.html'
+2024-09-14T09:02:13.299Z Eleventy:TemplatePassthrough Searching for: './*.html'
+2024-09-14T09:02:13.299Z Eleventy:FastGlobManager Glob search ('passthrough') searching for: './*.html'
+2024-09-14T09:02:13.301Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.302Z Eleventy:TemplateData getLocalDataPaths('./src/commons.njk'): [ './src/commons.11tydata.js', './src/commons.11tydata.cjs', './src/commons.11tydata.json', './src/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.302Z Eleventy:TemplateWriter ./src/commons.njk adding to template map.
+2024-09-14T09:02:13.302Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.302Z Eleventy:TemplateData getLocalDataPaths('./src/humors.njk'): [ './src/humors.11tydata.js', './src/humors.11tydata.cjs', './src/humors.11tydata.json', './src/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.302Z Eleventy:TemplateWriter ./src/humors.njk adding to template map.
+2024-09-14T09:02:13.302Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.302Z Eleventy:TemplateData getLocalDataPaths('./src/index.html'): [ './src/index.11tydata.js', './src/index.11tydata.cjs', './src/index.11tydata.json', './src/index.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.302Z Eleventy:TemplateWriter ./src/index.html adding to template map.
+2024-09-14T09:02:13.302Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.303Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts.njk'): [ './src/it-posts.11tydata.js', './src/it-posts.11tydata.cjs', './src/it-posts.11tydata.json', './src/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.303Z Eleventy:TemplateWriter ./src/it-posts.njk adding to template map.
+2024-09-14T09:02:13.303Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.303Z Eleventy:TemplateData getLocalDataPaths('./src/ru.njk'): [ './src/ru.11tydata.js', './src/ru.11tydata.cjs', './src/ru.11tydata.json', './src/ru.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.303Z Eleventy:TemplateWriter ./src/ru.njk adding to template map.
+2024-09-14T09:02:13.303Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.303Z Eleventy:TemplateData getLocalDataPaths('./src/tags.njk'): [ './src/tags.11tydata.js', './src/tags.11tydata.cjs', './src/tags.11tydata.json', './src/tags.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.303Z Eleventy:TemplateWriter ./src/tags.njk adding to template map.
+2024-09-14T09:02:13.303Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.303Z Eleventy:TemplateData getLocalDataPaths('./src/ідея.njk'): [ './src/ідея.11tydata.js', './src/ідея.11tydata.cjs', './src/ідея.11tydata.json', './src/ідея.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.303Z Eleventy:TemplateWriter ./src/ідея.njk adding to template map.
+2024-09-14T09:02:13.304Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.304Z Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-03-01-pokarannya_za_dobri_spravy.md'): [ './src/commons/2024-03-01-pokarannya_za_dobri_spravy.11tydata.js', './src/commons/2024-03-01-pokarannya_za_dobri_spravy.11tydata.cjs', './src/commons/2024-03-01-pokarannya_za_dobri_spravy.11tydata.json', './src/commons/2024-03-01-pokarannya_za_dobri_spravy.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.304Z Eleventy:TemplateWriter ./src/commons/2024-03-01-pokarannya_za_dobri_spravy.md adding to template map.
+2024-09-14T09:02:13.304Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.304Z Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-04-10-ustriystvo_dlya_tishiny.md'): [ './src/commons/2024-04-10-ustriystvo_dlya_tishiny.11tydata.js', './src/commons/2024-04-10-ustriystvo_dlya_tishiny.11tydata.cjs', './src/commons/2024-04-10-ustriystvo_dlya_tishiny.11tydata.json', './src/commons/2024-04-10-ustriystvo_dlya_tishiny.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.304Z Eleventy:TemplateWriter ./src/commons/2024-04-10-ustriystvo_dlya_tishiny.md adding to template map.
+2024-09-14T09:02:13.304Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.305Z Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-05-02-trademak-Gnizdo-Nest.md'): [ './src/commons/2024-05-02-trademak-Gnizdo-Nest.11tydata.js', './src/commons/2024-05-02-trademak-Gnizdo-Nest.11tydata.cjs', './src/commons/2024-05-02-trademak-Gnizdo-Nest.11tydata.json', './src/commons/2024-05-02-trademak-Gnizdo-Nest.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.305Z Eleventy:TemplateWriter ./src/commons/2024-05-02-trademak-Gnizdo-Nest.md adding to template map.
+2024-09-14T09:02:13.305Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.305Z Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-05-13-manyak-control.md'): [ './src/commons/2024-05-13-manyak-control.11tydata.js', './src/commons/2024-05-13-manyak-control.11tydata.cjs', './src/commons/2024-05-13-manyak-control.11tydata.json', './src/commons/2024-05-13-manyak-control.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.305Z Eleventy:TemplateWriter ./src/commons/2024-05-13-manyak-control.md adding to template map.
+2024-09-14T09:02:13.305Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.305Z Eleventy:TemplateData getLocalDataPaths('./src/commons/full-control.md'): [ './src/commons/full-control.11tydata.js', './src/commons/full-control.11tydata.cjs', './src/commons/full-control.11tydata.json', './src/commons/full-control.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.305Z Eleventy:TemplateWriter ./src/commons/full-control.md adding to template map.
+2024-09-14T09:02:13.305Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.305Z Eleventy:TemplateData getLocalDataPaths('./src/commons/poglyad-na-stvorenntya.md'): [ './src/commons/poglyad-na-stvorenntya.11tydata.js', './src/commons/poglyad-na-stvorenntya.11tydata.cjs', './src/commons/poglyad-na-stvorenntya.11tydata.json', './src/commons/poglyad-na-stvorenntya.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.305Z Eleventy:TemplateWriter ./src/commons/poglyad-na-stvorenntya.md adding to template map.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData getLocalDataPaths('./src/commons/portret_tvorcya.md'): [ './src/commons/portret_tvorcya.11tydata.js', './src/commons/portret_tvorcya.11tydata.cjs', './src/commons/portret_tvorcya.11tydata.json', './src/commons/portret_tvorcya.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.306Z Eleventy:TemplateWriter ./src/commons/portret_tvorcya.md adding to template map.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData getLocalDataPaths('./src/commons/space-lottery.md'): [ './src/commons/space-lottery.11tydata.js', './src/commons/space-lottery.11tydata.cjs', './src/commons/space-lottery.11tydata.json', './src/commons/space-lottery.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.306Z Eleventy:TemplateWriter ./src/commons/space-lottery.md adding to template map.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData getLocalDataPaths('./src/humors/alko.md'): [ './src/humors/alko.11tydata.js', './src/humors/alko.11tydata.cjs', './src/humors/alko.11tydata.json', './src/humors/alko.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.306Z Eleventy:TemplateWriter ./src/humors/alko.md adding to template map.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData getLocalDataPaths('./src/humors/all.md'): [ './src/humors/all.11tydata.js', './src/humors/all.11tydata.cjs', './src/humors/all.11tydata.json', './src/humors/all.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.306Z Eleventy:TemplateWriter ./src/humors/all.md adding to template map.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData getLocalDataPaths('./src/humors/all2.md'): [ './src/humors/all2.11tydata.js', './src/humors/all2.11tydata.cjs', './src/humors/all2.11tydata.json', './src/humors/all2.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.306Z Eleventy:TemplateWriter ./src/humors/all2.md adding to template map.
+2024-09-14T09:02:13.306Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData getLocalDataPaths('./src/humors/analysis.md'): [ './src/humors/analysis.11tydata.js', './src/humors/analysis.11tydata.cjs', './src/humors/analysis.11tydata.json', './src/humors/analysis.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.307Z Eleventy:TemplateWriter ./src/humors/analysis.md adding to template map.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData getLocalDataPaths('./src/humors/answers.md'): [ './src/humors/answers.11tydata.js', './src/humors/answers.11tydata.cjs', './src/humors/answers.11tydata.json', './src/humors/answers.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.307Z Eleventy:TemplateWriter ./src/humors/answers.md adding to template map.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData getLocalDataPaths('./src/humors/antisemit.md'): [ './src/humors/antisemit.11tydata.js', './src/humors/antisemit.11tydata.cjs', './src/humors/antisemit.11tydata.json', './src/humors/antisemit.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.307Z Eleventy:TemplateWriter ./src/humors/antisemit.md adding to template map.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData getLocalDataPaths('./src/humors/approach-to-women.md'): [ './src/humors/approach-to-women.11tydata.js', './src/humors/approach-to-women.11tydata.cjs', './src/humors/approach-to-women.11tydata.json', './src/humors/approach-to-women.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.307Z Eleventy:TemplateWriter ./src/humors/approach-to-women.md adding to template map.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData getLocalDataPaths('./src/humors/bezzahyst.md'): [ './src/humors/bezzahyst.11tydata.js', './src/humors/bezzahyst.11tydata.cjs', './src/humors/bezzahyst.11tydata.json', './src/humors/bezzahyst.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.307Z Eleventy:TemplateWriter ./src/humors/bezzahyst.md adding to template map.
+2024-09-14T09:02:13.307Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData getLocalDataPaths('./src/humors/dirty-kiss.md'): [ './src/humors/dirty-kiss.11tydata.js', './src/humors/dirty-kiss.11tydata.cjs', './src/humors/dirty-kiss.11tydata.json', './src/humors/dirty-kiss.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.308Z Eleventy:TemplateWriter ./src/humors/dirty-kiss.md adding to template map.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData getLocalDataPaths('./src/humors/disappointment.md'): [ './src/humors/disappointment.11tydata.js', './src/humors/disappointment.11tydata.cjs', './src/humors/disappointment.11tydata.json', './src/humors/disappointment.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.308Z Eleventy:TemplateWriter ./src/humors/disappointment.md adding to template map.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData getLocalDataPaths('./src/humors/double.md'): [ './src/humors/double.11tydata.js', './src/humors/double.11tydata.cjs', './src/humors/double.11tydata.json', './src/humors/double.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.308Z Eleventy:TemplateWriter ./src/humors/double.md adding to template map.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData getLocalDataPaths('./src/humors/duble-pleasure.md'): [ './src/humors/duble-pleasure.11tydata.js', './src/humors/duble-pleasure.11tydata.cjs', './src/humors/duble-pleasure.11tydata.json', './src/humors/duble-pleasure.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.308Z Eleventy:TemplateWriter ./src/humors/duble-pleasure.md adding to template map.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData getLocalDataPaths('./src/humors/exam.md'): [ './src/humors/exam.11tydata.js', './src/humors/exam.11tydata.cjs', './src/humors/exam.11tydata.json', './src/humors/exam.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.308Z Eleventy:TemplateWriter ./src/humors/exam.md adding to template map.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.308Z Eleventy:TemplateData getLocalDataPaths('./src/humors/fortunately.md'): [ './src/humors/fortunately.11tydata.js', './src/humors/fortunately.11tydata.cjs', './src/humors/fortunately.11tydata.json', './src/humors/fortunately.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.308Z Eleventy:TemplateWriter ./src/humors/fortunately.md adding to template map.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData getLocalDataPaths('./src/humors/guesswork.md'): [ './src/humors/guesswork.11tydata.js', './src/humors/guesswork.11tydata.cjs', './src/humors/guesswork.11tydata.json', './src/humors/guesswork.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.309Z Eleventy:TemplateWriter ./src/humors/guesswork.md adding to template map.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData getLocalDataPaths('./src/humors/jewish-telegram.md'): [ './src/humors/jewish-telegram.11tydata.js', './src/humors/jewish-telegram.11tydata.cjs', './src/humors/jewish-telegram.11tydata.json', './src/humors/jewish-telegram.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.309Z Eleventy:TemplateWriter ./src/humors/jewish-telegram.md adding to template map.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData getLocalDataPaths('./src/humors/judaism.md'): [ './src/humors/judaism.11tydata.js', './src/humors/judaism.11tydata.cjs', './src/humors/judaism.11tydata.json', './src/humors/judaism.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.309Z Eleventy:TemplateWriter ./src/humors/judaism.md adding to template map.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData getLocalDataPaths('./src/humors/kamasutra-battle.md'): [ './src/humors/kamasutra-battle.11tydata.js', './src/humors/kamasutra-battle.11tydata.cjs', './src/humors/kamasutra-battle.11tydata.json', './src/humors/kamasutra-battle.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.309Z Eleventy:TemplateWriter ./src/humors/kamasutra-battle.md adding to template map.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.309Z Eleventy:TemplateData getLocalDataPaths('./src/humors/left.md'): [ './src/humors/left.11tydata.js', './src/humors/left.11tydata.cjs', './src/humors/left.11tydata.json', './src/humors/left.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.309Z Eleventy:TemplateWriter ./src/humors/left.md adding to template map.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData getLocalDataPaths('./src/humors/lenkocites.md'): [ './src/humors/lenkocites.11tydata.js', './src/humors/lenkocites.11tydata.cjs', './src/humors/lenkocites.11tydata.json', './src/humors/lenkocites.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.310Z Eleventy:TemplateWriter ./src/humors/lenkocites.md adding to template map.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData getLocalDataPaths('./src/humors/levels.md'): [ './src/humors/levels.11tydata.js', './src/humors/levels.11tydata.cjs', './src/humors/levels.11tydata.json', './src/humors/levels.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.310Z Eleventy:TemplateWriter ./src/humors/levels.md adding to template map.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData getLocalDataPaths('./src/humors/lingerie.md'): [ './src/humors/lingerie.11tydata.js', './src/humors/lingerie.11tydata.cjs', './src/humors/lingerie.11tydata.json', './src/humors/lingerie.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.310Z Eleventy:TemplateWriter ./src/humors/lingerie.md adding to template map.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData getLocalDataPaths('./src/humors/mockery.md'): [ './src/humors/mockery.11tydata.js', './src/humors/mockery.11tydata.cjs', './src/humors/mockery.11tydata.json', './src/humors/mockery.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.310Z Eleventy:TemplateWriter ./src/humors/mockery.md adding to template map.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData getLocalDataPaths('./src/humors/modern-girl.md'): [ './src/humors/modern-girl.11tydata.js', './src/humors/modern-girl.11tydata.cjs', './src/humors/modern-girl.11tydata.json', './src/humors/modern-girl.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.310Z Eleventy:TemplateWriter ./src/humors/modern-girl.md adding to template map.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData getLocalDataPaths('./src/humors/newton.md'): [ './src/humors/newton.11tydata.js', './src/humors/newton.11tydata.cjs', './src/humors/newton.11tydata.json', './src/humors/newton.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.310Z Eleventy:TemplateWriter ./src/humors/newton.md adding to template map.
+2024-09-14T09:02:13.310Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData getLocalDataPaths('./src/humors/nudno.md'): [ './src/humors/nudno.11tydata.js', './src/humors/nudno.11tydata.cjs', './src/humors/nudno.11tydata.json', './src/humors/nudno.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.311Z Eleventy:TemplateWriter ./src/humors/nudno.md adding to template map.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData getLocalDataPaths('./src/humors/oberegnist.md'): [ './src/humors/oberegnist.11tydata.js', './src/humors/oberegnist.11tydata.cjs', './src/humors/oberegnist.11tydata.json', './src/humors/oberegnist.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.311Z Eleventy:TemplateWriter ./src/humors/oberegnist.md adding to template map.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData getLocalDataPaths('./src/humors/odeyavol.md'): [ './src/humors/odeyavol.11tydata.js', './src/humors/odeyavol.11tydata.cjs', './src/humors/odeyavol.11tydata.json', './src/humors/odeyavol.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.311Z Eleventy:TemplateWriter ./src/humors/odeyavol.md adding to template map.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData getLocalDataPaths('./src/humors/pain.md'): [ './src/humors/pain.11tydata.js', './src/humors/pain.11tydata.cjs', './src/humors/pain.11tydata.json', './src/humors/pain.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.311Z Eleventy:TemplateWriter ./src/humors/pain.md adding to template map.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData getLocalDataPaths('./src/humors/pantomims.md'): [ './src/humors/pantomims.11tydata.js', './src/humors/pantomims.11tydata.cjs', './src/humors/pantomims.11tydata.json', './src/humors/pantomims.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.311Z Eleventy:TemplateWriter ./src/humors/pantomims.md adding to template map.
+2024-09-14T09:02:13.311Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData getLocalDataPaths('./src/humors/pets.md'): [ './src/humors/pets.11tydata.js', './src/humors/pets.11tydata.cjs', './src/humors/pets.11tydata.json', './src/humors/pets.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.312Z Eleventy:TemplateWriter ./src/humors/pets.md adding to template map.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData getLocalDataPaths('./src/humors/sacrifice.md'): [ './src/humors/sacrifice.11tydata.js', './src/humors/sacrifice.11tydata.cjs', './src/humors/sacrifice.11tydata.json', './src/humors/sacrifice.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.312Z Eleventy:TemplateWriter ./src/humors/sacrifice.md adding to template map.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData getLocalDataPaths('./src/humors/seriously.md'): [ './src/humors/seriously.11tydata.js', './src/humors/seriously.11tydata.cjs', './src/humors/seriously.11tydata.json', './src/humors/seriously.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.312Z Eleventy:TemplateWriter ./src/humors/seriously.md adding to template map.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData getLocalDataPaths('./src/humors/skeletons.md'): [ './src/humors/skeletons.11tydata.js', './src/humors/skeletons.11tydata.cjs', './src/humors/skeletons.11tydata.json', './src/humors/skeletons.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.312Z Eleventy:TemplateWriter ./src/humors/skeletons.md adding to template map.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData getLocalDataPaths('./src/humors/slight-malaise.md'): [ './src/humors/slight-malaise.11tydata.js', './src/humors/slight-malaise.11tydata.cjs', './src/humors/slight-malaise.11tydata.json', './src/humors/slight-malaise.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.312Z Eleventy:TemplateWriter ./src/humors/slight-malaise.md adding to template map.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.312Z Eleventy:TemplateData getLocalDataPaths('./src/humors/susanin.md'): [ './src/humors/susanin.11tydata.js', './src/humors/susanin.11tydata.cjs', './src/humors/susanin.11tydata.json', './src/humors/susanin.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.313Z Eleventy:TemplateWriter ./src/humors/susanin.md adding to template map.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData getLocalDataPaths('./src/humors/suspicion.md'): [ './src/humors/suspicion.11tydata.js', './src/humors/suspicion.11tydata.cjs', './src/humors/suspicion.11tydata.json', './src/humors/suspicion.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.313Z Eleventy:TemplateWriter ./src/humors/suspicion.md adding to template map.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData getLocalDataPaths('./src/humors/true.md'): [ './src/humors/true.11tydata.js', './src/humors/true.11tydata.cjs', './src/humors/true.11tydata.json', './src/humors/true.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.313Z Eleventy:TemplateWriter ./src/humors/true.md adding to template map.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData getLocalDataPaths('./src/humors/zen-buddhism.md'): [ './src/humors/zen-buddhism.11tydata.js', './src/humors/zen-buddhism.11tydata.cjs', './src/humors/zen-buddhism.11tydata.json', './src/humors/zen-buddhism.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.313Z Eleventy:TemplateWriter ./src/humors/zen-buddhism.md adding to template map.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData getLocalDataPaths('./src/humors/zgadala.md'): [ './src/humors/zgadala.11tydata.js', './src/humors/zgadala.11tydata.cjs', './src/humors/zgadala.11tydata.json', './src/humors/zgadala.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.313Z Eleventy:TemplateWriter ./src/humors/zgadala.md adding to template map.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2011-07-08-human_comp.md'): [ './src/it-posts/2011-07-08-human_comp.11tydata.js', './src/it-posts/2011-07-08-human_comp.11tydata.cjs', './src/it-posts/2011-07-08-human_comp.11tydata.json', './src/it-posts/2011-07-08-human_comp.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.313Z Eleventy:TemplateWriter ./src/it-posts/2011-07-08-human_comp.md adding to template map.
+2024-09-14T09:02:13.313Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.314Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2012-03-12-perenos-nalashtruvan.md'): [ './src/it-posts/2012-03-12-perenos-nalashtruvan.11tydata.js', './src/it-posts/2012-03-12-perenos-nalashtruvan.11tydata.cjs', './src/it-posts/2012-03-12-perenos-nalashtruvan.11tydata.json', './src/it-posts/2012-03-12-perenos-nalashtruvan.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.314Z Eleventy:TemplateWriter ./src/it-posts/2012-03-12-perenos-nalashtruvan.md adding to template map.
+2024-09-14T09:02:13.314Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.314Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2024-04-11-comp-binary-optimisation.md'): [ './src/it-posts/2024-04-11-comp-binary-optimisation.11tydata.js', './src/it-posts/2024-04-11-comp-binary-optimisation.11tydata.cjs', './src/it-posts/2024-04-11-comp-binary-optimisation.11tydata.json', './src/it-posts/2024-04-11-comp-binary-optimisation.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.314Z Eleventy:TemplateWriter ./src/it-posts/2024-04-11-comp-binary-optimisation.md adding to template map.
+2024-09-14T09:02:13.314Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.314Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/all-in-memory.md'): [ './src/it-posts/all-in-memory.11tydata.js', './src/it-posts/all-in-memory.11tydata.cjs', './src/it-posts/all-in-memory.11tydata.json', './src/it-posts/all-in-memory.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.314Z Eleventy:TemplateWriter ./src/it-posts/all-in-memory.md adding to template map.
+2024-09-14T09:02:13.314Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.314Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/super-git.md'): [ './src/it-posts/super-git.11tydata.js', './src/it-posts/super-git.11tydata.cjs', './src/it-posts/super-git.11tydata.json', './src/it-posts/super-git.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.314Z Eleventy:TemplateWriter ./src/it-posts/super-git.md adding to template map.
+2024-09-14T09:02:13.314Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-14T09:02:13.314Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/u_hmaru.md'): [ './src/it-posts/u_hmaru.11tydata.js', './src/it-posts/u_hmaru.11tydata.cjs', './src/it-posts/u_hmaru.11tydata.json', './src/it-posts/u_hmaru.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-14T09:02:13.314Z Eleventy:TemplateWriter ./src/it-posts/u_hmaru.md adding to template map.
+2024-09-14T09:02:13.337Z Eleventy:FastGlobManager Glob search ('global-data') searching for: [ './src/_data/**/*.{json,cjs,js}' ]
+2024-09-14T09:02:13.406Z Eleventy:TemplatePassthrough Copying individual file 'src/style.css'
+2024-09-14T09:02:13.414Z Eleventy:TemplatePassthrough Copying individual file 'copyright.html'
+2024-09-14T09:02:13.414Z Eleventy:TemplatePassthrough Copying individual file 'google0afb6c2dac0007ec.html'
+2024-09-14T09:02:13.414Z Eleventy:TemplatePassthrough Copying individual file 'googlea9079d5fce490705.html'
+2024-09-14T09:02:13.417Z Eleventy:TemplatePassthrough Copying individual file 'src/images/femida.jpg'
+2024-09-14T09:02:13.417Z Eleventy:TemplatePassthrough Copying individual file 'src/images/avatar.svg'
+2024-09-14T09:02:13.417Z Eleventy:TemplatePassthrough Copying individual file 'src/images/four-bit-adder.png'
+2024-09-14T09:02:13.417Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo2-s.png'
+2024-09-14T09:02:13.417Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo1-s.png'
+2024-09-14T09:02:13.417Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo3-ss.png'
+2024-09-14T09:02:13.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo3-s.png'
+2024-09-14T09:02:13.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/pole1.png'
+2024-09-14T09:02:13.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/pole2.png'
+2024-09-14T09:02:13.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo4-s.png'
+2024-09-14T09:02:13.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/ranks.png'
+2024-09-14T09:02:13.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/waves.png'
+2024-09-14T09:02:13.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/pole3.png'
+2024-09-14T09:02:13.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/Book_Page.png'
+2024-09-14T09:02:13.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/In_Side.png'
+2024-09-14T09:02:13.425Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/commons.njk' of 2024-08-31T05:55:06.562Z (from 1725083706562.8352)
+2024-09-14T09:02:13.426Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors.njk' of 2024-08-31T05:55:06.554Z (from 1725083706554.8352)
+2024-09-14T09:02:13.426Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/index.html' of 2024-08-31T05:55:06.562Z (from 1725083706562.8352)
+2024-09-14T09:02:13.426Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/it-posts.njk' of 2024-08-31T05:55:06.562Z (from 1725083706562.8352)
+2024-09-14T09:02:13.426Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/ru.njk' of 2024-09-10T18:01:41.868Z (from 1725991301868.857)
+2024-09-14T09:02:13.426Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/tags.njk' of 2024-09-11T09:20:30.856Z (from 1726046430856.7341)
+2024-09-14T09:02:13.426Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/ідея.njk' of 2024-09-10T10:30:13.876Z (from 1725964213876.6519)
+2024-09-14T09:02:13.436Z Eleventy:Template getMappedDate: using filename regex time for './src/commons/2024-03-01-pokarannya_za_dobri_spravy.md' of '2024-03-01': 2024-03-01T00:00:00.000Z
+2024-09-14T09:02:13.437Z Eleventy:Template getMappedDate: using filename regex time for './src/commons/2024-04-10-ustriystvo_dlya_tishiny.md' of '2024-04-10': 2024-04-10T00:00:00.000Z
+2024-09-14T09:02:13.437Z Eleventy:Template getMappedDate: using filename regex time for './src/commons/2024-05-02-trademak-Gnizdo-Nest.md' of '2024-05-02': 2024-05-02T00:00:00.000Z
+2024-09-14T09:02:13.437Z Eleventy:Template getMappedDate: using filename regex time for './src/commons/2024-05-13-manyak-control.md' of '2024-05-13': 2024-05-13T00:00:00.000Z
+2024-09-14T09:02:13.437Z Eleventy:Template getMappedDate: using filename regex time for './src/it-posts/2024-04-11-comp-binary-optimisation.md' of '2024-04-11': 2024-04-11T00:00:00.000Z
+2024-09-14T09:02:13.438Z Eleventy:Template getMappedDate: using filename regex time for './src/it-posts/2012-03-12-perenos-nalashtruvan.md' of '2012-03-12': 2012-03-12T00:00:00.000Z
+2024-09-14T09:02:13.438Z Eleventy:Template getMappedDate: using filename regex time for './src/it-posts/2011-07-08-human_comp.md' of '2011-07-08': 2011-07-08T00:00:00.000Z
+2024-09-14T09:02:13.440Z Eleventy:TemplatePassthroughManager Copied './src/style.css' (1 files)
+2024-09-14T09:02:13.442Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/commons/full-control.md' of 2024-08-31T05:55:06.714Z (from 1725083706714.833)
+2024-09-14T09:02:13.442Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/commons/portret_tvorcya.md' of 2024-08-31T05:55:06.698Z (from 1725083706698.8333)
+2024-09-14T09:02:13.442Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/commons/poglyad-na-stvorenntya.md' of 2024-08-31T05:55:06.718Z (from 1725083706718.833)
+2024-09-14T09:02:13.442Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/commons/space-lottery.md' of 2024-08-31T05:55:06.754Z (from 1725083706754.8325)
+2024-09-14T09:02:13.442Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/it-posts/all-in-memory.md' of 2024-08-31T05:55:06.654Z (from 1725083706654.834)
+2024-09-14T09:02:13.442Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/it-posts/u_hmaru.md' of 2024-08-31T05:55:06.562Z (from 1725083706562.8352)
+2024-09-14T09:02:13.442Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/it-posts/super-git.md' of 2024-08-31T05:55:06.666Z (from 1725083706666.8337)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/alko.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/all.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/all2.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/analysis.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/answers.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/antisemit.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/approach-to-women.md' of 2024-09-09T13:03:03.639Z (from 1725886983639.6548)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/bezzahyst.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/dirty-kiss.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/disappointment.md' of 2024-09-09T13:27:00.408Z (from 1725888420408.6975)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/double.md' of 2024-09-09T13:26:18.937Z (from 1725888378937.3691)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/duble-pleasure.md' of 2024-09-09T13:26:04.513Z (from 1725888364513.6025)
+2024-09-14T09:02:13.443Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/exam.md' of 2024-09-09T13:25:19.370Z (from 1725888319370.333)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/fortunately.md' of 2024-09-09T13:24:37.631Z (from 1725888277631.0078)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/guesswork.md' of 2024-09-09T13:24:23.835Z (from 1725888263835.231)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/jewish-telegram.md' of 2024-09-09T13:23:08.588Z (from 1725888188588.446)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/judaism.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/kamasutra-battle.md' of 2024-09-09T13:22:50.168Z (from 1725888170168.7432)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/left.md' of 2024-09-09T13:22:35.608Z (from 1725888155608.978)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/lenkocites.md' of 2024-09-09T13:03:18.291Z (from 1725886998291.414)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/levels.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/lingerie.md' of 2024-09-09T13:22:20.289Z (from 1725888140289.2249)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/mockery.md' of 2024-09-09T13:08:56.853Z (from 1725887336853.9548)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/newton.md' of 2024-09-09T13:10:56.648Z (from 1725887456648.0996)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/modern-girl.md' of 2024-09-09T13:09:52.573Z (from 1725887392573.0947)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/nudno.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.444Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/oberegnist.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/pain.md' of 2024-09-09T13:15:17.623Z (from 1725887717623.9924)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/pantomims.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/odeyavol.md' of 2024-09-09T13:17:53.021Z (from 1725887873021.5166)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/pets.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/sacrifice.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/seriously.md' of 2024-09-10T10:38:25.160Z (from 1725964705160.8762)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/skeletons.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/slight-malaise.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/susanin.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/suspicion.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/true.md' of 2024-09-09T13:11:26.095Z (from 1725887486095.6401)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/zgadala.md' of 2024-08-31T05:55:06.842Z (from 1725083706842.8313)
+2024-09-14T09:02:13.445Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/humors/zen-buddhism.md' of 2024-08-31T05:55:06.802Z (from 1725083706802.8318)
+2024-09-14T09:02:13.446Z Eleventy:Dependencies 'src/commons.njk' depends on collection: 'commons'
+2024-09-14T09:02:13.446Z Eleventy:Dependencies 'src/humors.njk' depends on collection: 'humors'
+2024-09-14T09:02:13.446Z Eleventy:Dependencies 'src/it-posts.njk' depends on collection: 'it-posts'
+2024-09-14T09:02:13.447Z Eleventy:Dependencies 'src/ru.njk' depends on collection: 'ru'
+2024-09-14T09:02:13.447Z Eleventy:Dependencies 'src/tags.njk' depends on collection: 'tags'
+2024-09-14T09:02:13.447Z Eleventy:Dependencies 'src/ідея.njk' depends on collection: 'ідея'
+2024-09-14T09:02:13.448Z Eleventy:TemplateMap Caching collections objects.
+2024-09-14T09:02:13.453Z Eleventy:TemplateMap Collection: collections.commons size: 8
+2024-09-14T09:02:13.458Z Eleventy:TemplateMap Collection: collections.humors size: 40
+2024-09-14T09:02:13.460Z Eleventy:TemplateMap Collection: collections.it-posts size: 6
+2024-09-14T09:02:13.461Z Eleventy:TemplateMap Collection: collections.ru size: 2
+2024-09-14T09:02:13.461Z Eleventy:TemplateMap Collection: collections.ідея size: 3
+2024-09-14T09:02:13.461Z Eleventy:TemplateMap Collection: collections.all size: 60
+2024-09-14T09:02:13.461Z Eleventy:TemplateMap Collection: collections.nav size: 3
+2024-09-14T09:02:13.461Z Eleventy:TemplateMap Collection: collections.думка size: 1
+2024-09-14T09:02:13.462Z Eleventy:TemplateMap Collection: collections.tags size: 7
+2024-09-14T09:02:13.462Z Eleventy:TemplateMap Collection: collections.all size: 61
+2024-09-14T09:02:13.462Z Eleventy:TemplateMap Collection: collections.nav size: 4
+2024-09-14T09:02:13.529Z Eleventy:TemplateWriter Template map created.
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/commons/index.html from ./src/commons.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/commons/1/index.html from ./src/commons.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/humors/index.html from ./src/humors.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/humors/1/index.html from ./src/humors.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/humors/2/index.html from ./src/humors.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/humors/3/index.html from ./src/humors.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/humors/4/index.html from ./src/humors.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/humors/5/index.html from ./src/humors.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/humors/6/index.html from ./src/humors.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/humors/7/index.html from ./src/humors.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/index.html from ./src/index.html (liquid)
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/it-posts/index.html from ./src/it-posts.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/it-posts/1/index.html from ./src/it-posts.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/ru/index.html from ./src/ru.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/tags/index.html from ./src/tags.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/tags/1/index.html from ./src/tags.njk
+2024-09-14T09:02:13.561Z Eleventy:Logger Writing _site/ідея/index.html from ./src/ідея.njk
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/commons/2024-03-01-pokarannya_za_dobri_spravy/index.html from ./src/commons/2024-03-01-pokarannya_za_dobri_spravy.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/commons/2024-04-10-ustriystvo_dlya_tishiny/index.html from ./src/commons/2024-04-10-ustriystvo_dlya_tishiny.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/commons/2024-05-02-trademak-Gnizdo-Nest/index.html from ./src/commons/2024-05-02-trademak-Gnizdo-Nest.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/commons/2024-05-13-manyak-control/index.html from ./src/commons/2024-05-13-manyak-control.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/it-posts/2024-04-11-comp-binary-optimisation/index.html from ./src/it-posts/2024-04-11-comp-binary-optimisation.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/it-posts/2012-03-12-perenos-nalashtruvan/index.html from ./src/it-posts/2012-03-12-perenos-nalashtruvan.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/it-posts/2011-07-08-human_comp/index.html from ./src/it-posts/2011-07-08-human_comp.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/commons/full-control/index.html from ./src/commons/full-control.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/commons/portret_tvorcya/index.html from ./src/commons/portret_tvorcya.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/commons/poglyad-na-stvorenntya/index.html from ./src/commons/poglyad-na-stvorenntya.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/commons/space-lottery/index.html from ./src/commons/space-lottery.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/it-posts/all-in-memory/index.html from ./src/it-posts/all-in-memory.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/it-posts/u_hmaru/index.html from ./src/it-posts/u_hmaru.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/it-posts/super-git/index.html from ./src/it-posts/super-git.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/humors/alko/index.html from ./src/humors/alko.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/humors/all/index.html from ./src/humors/all.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/humors/all2/index.html from ./src/humors/all2.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/humors/analysis/index.html from ./src/humors/analysis.md (liquid)
+2024-09-14T09:02:13.562Z Eleventy:Logger Writing _site/humors/answers/index.html from ./src/humors/answers.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/antisemit/index.html from ./src/humors/antisemit.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/approach-to-women/index.html from ./src/humors/approach-to-women.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/bezzahyst/index.html from ./src/humors/bezzahyst.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/dirty-kiss/index.html from ./src/humors/dirty-kiss.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/disappointment/index.html from ./src/humors/disappointment.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/double/index.html from ./src/humors/double.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/duble-pleasure/index.html from ./src/humors/duble-pleasure.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/exam/index.html from ./src/humors/exam.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/fortunately/index.html from ./src/humors/fortunately.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/guesswork/index.html from ./src/humors/guesswork.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/jewish-telegram/index.html from ./src/humors/jewish-telegram.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/judaism/index.html from ./src/humors/judaism.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/kamasutra-battle/index.html from ./src/humors/kamasutra-battle.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/left/index.html from ./src/humors/left.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/lenkocites/index.html from ./src/humors/lenkocites.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/levels/index.html from ./src/humors/levels.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/lingerie/index.html from ./src/humors/lingerie.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/mockery/index.html from ./src/humors/mockery.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/newton/index.html from ./src/humors/newton.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/modern-girl/index.html from ./src/humors/modern-girl.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/nudno/index.html from ./src/humors/nudno.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/oberegnist/index.html from ./src/humors/oberegnist.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/pain/index.html from ./src/humors/pain.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/pantomims/index.html from ./src/humors/pantomims.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/odeyavol/index.html from ./src/humors/odeyavol.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/pets/index.html from ./src/humors/pets.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/sacrifice/index.html from ./src/humors/sacrifice.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/seriously/index.html from ./src/humors/seriously.md (liquid)
+2024-09-14T09:02:13.563Z Eleventy:Logger Writing _site/humors/skeletons/index.html from ./src/humors/skeletons.md (liquid)
+2024-09-14T09:02:13.564Z Eleventy:Logger Writing _site/humors/slight-malaise/index.html from ./src/humors/slight-malaise.md (liquid)
+2024-09-14T09:02:13.564Z Eleventy:Logger Writing _site/humors/susanin/index.html from ./src/humors/susanin.md (liquid)
+2024-09-14T09:02:13.564Z Eleventy:Logger Writing _site/humors/suspicion/index.html from ./src/humors/suspicion.md (liquid)
+2024-09-14T09:02:13.564Z Eleventy:Logger Writing _site/humors/true/index.html from ./src/humors/true.md (liquid)
+2024-09-14T09:02:13.564Z Eleventy:Logger Writing _site/humors/zgadala/index.html from ./src/humors/zgadala.md (liquid)
+2024-09-14T09:02:13.564Z Eleventy:Logger Writing _site/humors/zen-buddhism/index.html from ./src/humors/zen-buddhism.md (liquid)
+2024-09-14T09:02:13.566Z Eleventy:TemplatePassthroughManager Copied './*.html' (3 files)
+2024-09-14T09:02:13.573Z Eleventy:Template _site/commons/index.html written..
+2024-09-14T09:02:13.573Z Eleventy:Template _site/commons/1/index.html written..
+2024-09-14T09:02:13.573Z Eleventy:Template _site/humors/index.html written..
+2024-09-14T09:02:13.573Z Eleventy:Template _site/humors/2/index.html written..
+2024-09-14T09:02:13.573Z Eleventy:Template _site/humors/1/index.html written..
+2024-09-14T09:02:13.573Z Eleventy:Template _site/humors/6/index.html written..
+2024-09-14T09:02:13.573Z Eleventy:Template _site/humors/7/index.html written..
+2024-09-14T09:02:13.573Z Eleventy:Template _site/humors/3/index.html written..
+2024-09-14T09:02:13.574Z Eleventy:Template _site/it-posts/index.html written..
+2024-09-14T09:02:13.574Z Eleventy:Template _site/humors/5/index.html written..
+2024-09-14T09:02:13.574Z Eleventy:Template _site/index.html written..
+2024-09-14T09:02:13.574Z Eleventy:Template _site/humors/4/index.html written..
+2024-09-14T09:02:13.574Z Eleventy:Template _site/it-posts/1/index.html written..
+2024-09-14T09:02:13.574Z Eleventy:Template _site/ru/index.html written..
+2024-09-14T09:02:13.574Z Eleventy:Template _site/tags/index.html written..
+2024-09-14T09:02:13.575Z Eleventy:Template _site/ідея/index.html written..
+2024-09-14T09:02:13.576Z Eleventy:Template _site/tags/1/index.html written..
+2024-09-14T09:02:13.576Z Eleventy:Template _site/commons/2024-03-01-pokarannya_za_dobri_spravy/index.html written..
+2024-09-14T09:02:13.576Z Eleventy:Template _site/commons/2024-05-13-manyak-control/index.html written..
+2024-09-14T09:02:13.576Z Eleventy:Template _site/commons/2024-04-10-ustriystvo_dlya_tishiny/index.html written..
+2024-09-14T09:02:13.576Z Eleventy:Template _site/commons/2024-05-02-trademak-Gnizdo-Nest/index.html written..
+2024-09-14T09:02:13.576Z Eleventy:Template _site/it-posts/2024-04-11-comp-binary-optimisation/index.html written..
+2024-09-14T09:02:13.576Z Eleventy:Template _site/it-posts/2012-03-12-perenos-nalashtruvan/index.html written..
+2024-09-14T09:02:13.576Z Eleventy:Template _site/commons/poglyad-na-stvorenntya/index.html written..
+2024-09-14T09:02:13.578Z Eleventy:Template _site/commons/full-control/index.html written..
+2024-09-14T09:02:13.578Z Eleventy:Template _site/it-posts/2011-07-08-human_comp/index.html written..
+2024-09-14T09:02:13.578Z Eleventy:Template _site/commons/space-lottery/index.html written..
+2024-09-14T09:02:13.578Z Eleventy:Template _site/commons/portret_tvorcya/index.html written..
+2024-09-14T09:02:13.578Z Eleventy:Template _site/it-posts/u_hmaru/index.html written..
+2024-09-14T09:02:13.578Z Eleventy:Template _site/it-posts/all-in-memory/index.html written..
+2024-09-14T09:02:13.578Z Eleventy:Template _site/it-posts/super-git/index.html written..
+2024-09-14T09:02:13.578Z Eleventy:Template _site/humors/all2/index.html written..
+2024-09-14T09:02:13.580Z Eleventy:Template _site/humors/alko/index.html written..
+2024-09-14T09:02:13.580Z Eleventy:Template _site/humors/all/index.html written..
+2024-09-14T09:02:13.580Z Eleventy:Template _site/humors/analysis/index.html written..
+2024-09-14T09:02:13.580Z Eleventy:Template _site/humors/antisemit/index.html written..
+2024-09-14T09:02:13.580Z Eleventy:Template _site/humors/answers/index.html written..
+2024-09-14T09:02:13.580Z Eleventy:Template _site/humors/approach-to-women/index.html written..
+2024-09-14T09:02:13.580Z Eleventy:Template _site/humors/disappointment/index.html written..
+2024-09-14T09:02:13.580Z Eleventy:Template _site/humors/duble-pleasure/index.html written..
+2024-09-14T09:02:13.582Z Eleventy:Template _site/humors/bezzahyst/index.html written..
+2024-09-14T09:02:13.582Z Eleventy:Template _site/humors/double/index.html written..
+2024-09-14T09:02:13.582Z Eleventy:Template _site/humors/exam/index.html written..
+2024-09-14T09:02:13.582Z Eleventy:Template _site/humors/fortunately/index.html written..
+2024-09-14T09:02:13.582Z Eleventy:Template _site/humors/dirty-kiss/index.html written..
+2024-09-14T09:02:13.582Z Eleventy:Template _site/humors/guesswork/index.html written..
+2024-09-14T09:02:13.582Z Eleventy:Template _site/humors/jewish-telegram/index.html written..
+2024-09-14T09:02:13.582Z Eleventy:Template _site/humors/judaism/index.html written..
+2024-09-14T09:02:13.586Z Eleventy:Template _site/humors/left/index.html written..
+2024-09-14T09:02:13.586Z Eleventy:Template _site/humors/lingerie/index.html written..
+2024-09-14T09:02:13.586Z Eleventy:Template _site/humors/lenkocites/index.html written..
+2024-09-14T09:02:13.586Z Eleventy:Template _site/humors/kamasutra-battle/index.html written..
+2024-09-14T09:02:13.586Z Eleventy:Template _site/humors/mockery/index.html written..
+2024-09-14T09:02:13.586Z Eleventy:Template _site/humors/levels/index.html written..
+2024-09-14T09:02:13.586Z Eleventy:Template _site/humors/newton/index.html written..
+2024-09-14T09:02:13.586Z Eleventy:Template _site/humors/oberegnist/index.html written..
+2024-09-14T09:02:13.588Z Eleventy:Template _site/humors/nudno/index.html written..
+2024-09-14T09:02:13.588Z Eleventy:Template _site/humors/modern-girl/index.html written..
+2024-09-14T09:02:13.588Z Eleventy:Template _site/humors/odeyavol/index.html written..
+2024-09-14T09:02:13.589Z Eleventy:Template _site/humors/pain/index.html written..
+2024-09-14T09:02:13.589Z Eleventy:Template _site/humors/pantomims/index.html written..
+2024-09-14T09:02:13.589Z Eleventy:Template _site/humors/pets/index.html written..
+2024-09-14T09:02:13.589Z Eleventy:Template _site/humors/sacrifice/index.html written..
+2024-09-14T09:02:13.589Z Eleventy:Template _site/humors/susanin/index.html written..
+2024-09-14T09:02:13.594Z Eleventy:Template _site/humors/slight-malaise/index.html written..
+2024-09-14T09:02:13.594Z Eleventy:Template _site/humors/skeletons/index.html written..
+2024-09-14T09:02:13.595Z Eleventy:Template _site/humors/suspicion/index.html written..
+2024-09-14T09:02:13.595Z Eleventy:Template _site/humors/seriously/index.html written..
+2024-09-14T09:02:13.595Z Eleventy:Template _site/humors/zgadala/index.html written..
+2024-09-14T09:02:13.595Z Eleventy:Template _site/humors/true/index.html written..
+2024-09-14T09:02:13.595Z Eleventy:Template _site/humors/zen-buddhism/index.html written..
+2024-09-14T09:02:13.607Z Eleventy:TemplatePassthroughManager Copied './src/images/' (15 files)
+2024-09-14T09:02:13.607Z Eleventy:TemplatePassthroughManager TemplatePassthrough copy finished. Current count: 19
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark     17ms   5%   296× (Configuration) "url" Nunjucks Filter
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark      3ms   1%    59× (Configuration) "dateFilter" Nunjucks Filter
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark      1ms   0%    59× (Configuration) "timeFilter" Nunjucks Filter
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark     21ms   6%     1× (Aggregate) Searching the file system (templates)
+2024-09-14T09:02:13.608Z Eleventy:Logger Benchmark     39ms  11%     1× (Aggregate) Searching the file system (passthrough)
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark     39ms  11%     1× (Aggregate) Searching the file system (passthrough)
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark      7ms   2%     1× (Aggregate) Searching the file system (data)
+2024-09-14T09:02:13.608Z Eleventy:Logger Benchmark     83ms  23%    64× (Aggregate) Template Read
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark     83ms  23%    64× (Aggregate) Template Read
+2024-09-14T09:02:13.608Z Eleventy:Logger Benchmark    200ms  55%    19× (Aggregate) Passthrough Copy File
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark    200ms  55%    19× (Aggregate) Passthrough Copy File
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark      0ms   0%    71× (Aggregate) (count) getOutputLocations
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark      0ms   0%    64× (Aggregate) (count) Template Compile Cache Miss
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark     21ms   6%    64× (Aggregate) Template Compile
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark      6ms   2%     1× (Aggregate) > Compile > ./src/commons/2024-03-01-pokarannya_za_dobri_spravy.md
+2024-09-14T09:02:13.608Z Eleventy:Logger Benchmark     41ms  11%    71× (Aggregate) Render
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark     41ms  11%    71× (Aggregate) Render
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark     10ms   3%     1× (Aggregate) > Render > ./src/commons/2024-03-01-pokarannya_za_dobri_spravy.md
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark      6ms   2%     1× (Aggregate) > Compile > ./src/commons.njk
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark     14ms   4%     2× (Aggregate) > Render > ./src/commons.njk (2 pages)
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark     13ms   4%     1× (Aggregate) > Render to > _site/commons/index.html
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark      0ms   0%    10× (Aggregate) (count) Template Compile Cache Hit
+2024-09-14T09:02:13.608Z Eleventy:Benchmark Benchmark      2ms   1%     1× (Aggregate) > Render > ./src/humors/analysis.md
+2024-09-14T09:02:13.609Z Eleventy:Benchmark Benchmark      4ms   1%     8× (Aggregate) > Render > ./src/humors.njk (8 pages)
+2024-09-14T09:02:13.609Z Eleventy:Benchmark Benchmark      2ms   1%     1× (Aggregate) > Render > ./src/it-posts/2011-07-08-human_comp.md
+2024-09-14T09:02:13.609Z Eleventy:Benchmark Benchmark      2ms   0%     2× (Aggregate) > Render > ./src/tags.njk (2 pages)
+2024-09-14T09:02:13.609Z Eleventy:Benchmark Benchmark      2ms   1%     1× (Aggregate) > Compile > ./src/_includes/layout.njk
+2024-09-14T09:02:13.609Z Eleventy:Logger Benchmark     34ms   9%    71× (Aggregate) Template Write
+2024-09-14T09:02:13.609Z Eleventy:Benchmark Benchmark     34ms   9%    71× (Aggregate) Template Write
+[11ty] Copied 19 files / Wrote 71 files in 0.35 seconds (4.9ms each, v2.0.1)
+2024-09-14T09:02:13.609Z Eleventy Finished writing templates.
+2024-09-14T09:02:13.609Z Eleventy 
+      Getting frustrated? Have a suggestion/feature request/feedback?
+      I want to hear it! Open an issue: https://github.com/11ty/eleventy/issues/new
+2024-09-14T09:02:13.610Z Eleventy:TemplatePassthroughManager `addPassthroughCopy` config API paths: { 'src/style.css': { outputPath: true, copyOptions: {} }, './src/images/': { outputPath: true, copyOptions: {} }, '*.html': { outputPath: true, copyOptions: {} } }
+2024-09-14T09:02:13.610Z Eleventy:TemplatePassthroughManager `addPassthroughCopy` config API normalized paths: [ { inputPath: './src/style.css', outputPath: true, copyOptions: {} }, { inputPath: './src/images/', outputPath: true, copyOptions: {} }, { inputPath: './*.html', outputPath: true, copyOptions: {} } ]
+2024-09-14T09:02:13.615Z Eleventy:FastGlobManager Glob search ('js-dependencies') searching for: [ './src/**/*.11tydata.js' ]
+2024-09-14T09:02:13.615Z Eleventy:FastGlobManager Glob search ('js-dependencies') ignoring: [ '**/node_modules/**' ]
+2024-09-14T09:02:13.623Z Eleventy Watching for changes to: [ './package.json', './src/**/*.{liquid,ejs,md,hbs,mustache,haml,pug,njk,html,11ty.js,11ty.cjs}', './src/style.css', './src/images/**', './*.html', './src/_includes/**', './src/_data/**', './.gitignore', './.eleventyignore', './src/.eleventyignore', './.eleventy.js', './eleventy.config.js', './eleventy.config.cjs', './src/**/*.{json,11tydata.cjs,11tydata.js}', './src/filters/date-filter.js', './src/filters/time-filter.js', './src/filters/w3-date-filter.js' ]
+2024-09-14T09:02:13.623Z Eleventy Ignoring watcher changes to: [ '_site/**', 'node_modules/**', 'package-lock.json', '*.log', 'npm-debug.*', 'Thumbs.db', '.cache', './**/node_modules/**', './.git/**' ]
+2024-09-14T09:02:13.629Z Eleventy:Benchmark Benchmark     20ms NaN%     1× (Watch) Start up --watch
+2024-09-14T09:02:13.629Z Eleventy:Benchmark Benchmark     11ms NaN%     1× (Watch) Watching JavaScript Dependencies (disable with `eleventyConfig.setWatchJavaScriptDependencies(false)`)
+[11ty] Watching…
+2024-09-14T09:02:13.656Z EleventyDevServer Creating new Dev Server instance.
+2024-09-14T09:02:13.656Z EleventyDevServer Watching []
+2024-09-14T09:02:13.660Z Eleventy:Logger Server at http://localhost:8080/
+2024-09-14T09:02:17.768Z Eleventy Cleaning up chokidar and server instances, if they exist.

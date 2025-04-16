@@ -12,4 +12,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('dateFilter', dateFilter);
   eleventyConfig.addFilter('timeFilter', timeFilter);
   eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
+  eleventyConfig.addCollection("tags", function(collection) {
+        let tags = new Set();
+        collection.getAll().forEach(item => {
+            if ("tags" in item.data) {
+                item.data.tags.forEach( tag => {return tags.add(tag)});
+            }
+        });
+        return [...tags];
+    });
 }

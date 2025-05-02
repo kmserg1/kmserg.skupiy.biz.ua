@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: Eleventy. Початок.
+pagination:
+  data: collections.eleventy-start
+  size: 5
+  alias: eleventy-start
+paginationPrevText: 'Новіші'
+paginationNextText: 'Старіші'
+---
+
+<h1>{{ title }}</h1>
+
+{% set collection = collections.eleventy-start %}
+{% include "collection-posts.njk" %}

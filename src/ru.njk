@@ -1,0 +1,16 @@
+---
+layout: layout.njk
+title: Російською
+pagination:
+  data: collections.ru
+  size: 5
+  alias: ru
+paginationPrevText: 'Новіші'
+paginationNextText: 'Старіші'
+---
+
+<h1>{{ title }}</h1>
+Тут зібрані статті, які на мою думку, втратять сенс юмора при перекладі . І щоб не вилити з водою дитину я залишив це російською. Вибачайте.
+
+{% set collection = collections.ru %}
+{% include "collection-posts.njk" %}

@@ -1,0 +1,17 @@
+---
+layout: layout.njk
+title: Загальне
+tags: ['nav']
+pagination:
+  data: collections.commons
+  size: 5
+  reverse: true
+  alias: commons
+paginationPrevText: 'Новіші'
+paginationNextText: 'Старіші'
+---
+
+<h1>{{ title }}</h1>
+
+{% set collection = collections.commons %}
+{% include "collection-posts.njk" %}

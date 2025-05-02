@@ -1,0 +1,8 @@
+Усі теги: <br>
+{% for tag in collections.tags %}
+<div class="taglist">
+	{% if  tag != "nav" %}
+               &nbsp;<a href="/{{ tag | url }}">{{ tag }}</a> &nbsp;
+	{% endif %}
+</div>
+{% endfor %}

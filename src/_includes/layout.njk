@@ -1,0 +1,47 @@
+---
+title: My default layout title
+site:
+  name: Шатній С.О.
+---
+{% set pageTitle = site.name + ' - ' + title %}
+{% if site.name === title %} 
+  {% set pageTitle = title %}
+{% endif %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ pageTitle }}</title>
+  {% include "partials/meta-info.njk" %}
+  <link rel="shortcut icon" href="/images/avatar.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<div class="SWrap">
+  
+  <div class="SHWrap">
+    {% include "partials/site-head.njk" %}
+  </div>
+
+  <div class="SMainWrap"> 
+    <div class="SMainLeft">
+      {{ content | safe }}
+    </div>
+    <div class="SMainRight">
+	{% include "partials/tag-list.njk" %}
+    </div>
+  </div>
+  
+  <div class="SBottomWrap"> 
+    {% include "partials/site-bottom.njk" %}
+  </div>
+
+</div>
+</body>
+
+</html>

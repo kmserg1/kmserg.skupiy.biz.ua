@@ -1,0 +1,17 @@
+---
+layout: layout.njk
+title: IT-блог
+tags: ['nav']
+pagination:
+  data: collections.it-posts
+  reverse: true
+  size: 5
+  alias: it-posts
+paginationPrevText: 'Новіші'
+paginationNextText: 'Старіші'
+---
+
+<h1>{{ title }}</h1>
+
+{% set collection = collections.it-posts %}
+{% include "collection-posts.njk" %}

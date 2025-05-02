@@ -1,0 +1,28 @@
+---
+layout: layout.njk
+---
+
+{% set previousPost = collections.humors | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.humors | getNextCollectionItem(page) %}
+
+Теги: 
+{% for tag in tags%}
+    <a href="/{{ tag }}">{{ tag }}</a> &nbsp;
+{% endfor %}
+
+<br><br><br>
+ 
+{% include "partials/prev-next.njk" %}
+
+<h1>{{ title }}</h1>
+<div class="post">
+{{ content | safe }}
+</div>
+<br><br>
+{% include "partials/prev-next.njk" %}
+<br><br>
+
+
+
+
+

@@ -1,0 +1,19 @@
+<nav>
+<div class=pagin>
+<div class=leftPagin>
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}{{ paginationAnchor }}"data-direction="backwards">
+	<span><< {{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
+    </a>
+  {% endif %} 
+</div>
+<div class="centerPagin"></div>
+<div class=rightPagin>
+  {% if pagination.href.next %}
+     <a href="{{ pagination.href.next }}{{ paginationAnchor }}" data-direction="forwards">
+       <span>{{ paginationNextText if paginationNextText else 'Next' }} >></span>
+     </a>
+   {% endif %}
+</div>
+</div>
+</nav>

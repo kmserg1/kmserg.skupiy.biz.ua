@@ -1,0 +1,1495 @@
+2024-09-30T17:47:27.969Z Eleventy:cmd command: eleventy { _: [], quiet: null, version: false, watch: false, dryrun: false, help: false, serve: false, incremental: false, 'ignore-initial': false }
+2024-09-30T17:47:28.011Z Eleventy:EventBus Setting up global EventBus.
+2024-09-30T17:47:28.168Z Eleventy:UserConfig Resetting EleventyConfig to initial values.
+2024-09-30T17:47:28.174Z Eleventy:UserConfig Adding universal filter 'slug'
+2024-09-30T17:47:28.174Z Eleventy:UserConfig Adding universal filter 'slugify'
+2024-09-30T17:47:28.174Z Eleventy:UserConfig Adding universal filter 'url'
+2024-09-30T17:47:28.174Z Eleventy:UserConfig Adding universal filter 'log'
+2024-09-30T17:47:28.174Z Eleventy:UserConfig Adding universal filter 'serverlessUrl'
+2024-09-30T17:47:28.174Z Eleventy:UserConfig Adding universal filter 'getCollectionItemIndex'
+2024-09-30T17:47:28.175Z Eleventy:UserConfig Adding universal filter 'getCollectionItem'
+2024-09-30T17:47:28.175Z Eleventy:UserConfig Adding universal filter 'getPreviousCollectionItem'
+2024-09-30T17:47:28.175Z Eleventy:UserConfig Adding universal filter 'getNextCollectionItem'
+2024-09-30T17:47:28.176Z Eleventy:TemplateConfig rootConfig { templateFormats: [ 'liquid',   'ejs', 'md',       'hbs', 'mustache', 'haml', 'pug',      'njk', 'html',     '11ty.js' ], pathPrefix: '/', markdownTemplateEngine: 'liquid', htmlTemplateEngine: 'liquid', htmlOutputSuffix: '-o', dataFileSuffixes: [ '.11tydata', '' ], dataFileDirBaseNameOverride: false, keys: { package: 'pkg', layout: 'layout', permalink: 'permalink', permalinkRoot: 'permalinkBypassOutputDir', engineOverride: 'templateEngineOverride', computed: 'eleventyComputed' }, dir: { input: '.', includes: '_includes', data: '_data', output: '_site' }, handlebarsHelpers: {}, nunjucksFilters: {} }
+2024-09-30T17:47:28.177Z Eleventy Setting process.env.ELEVENTY_ROOT: '/home/kmserg/studying/blog/kmserg.skupiy.biz.ua'
+2024-09-30T17:47:28.177Z Dev:Eleventy:TemplateConfig Merging via getConfig (first time)
+2024-09-30T17:47:28.177Z Eleventy:TemplateConfig Merging config with .eleventy.js
+2024-09-30T17:47:28.184Z Eleventy:UserConfig Adding universal filter 'dateFilter'
+2024-09-30T17:47:28.184Z Eleventy:UserConfig Adding universal filter 'timeFilter'
+2024-09-30T17:47:28.184Z Eleventy:UserConfig Adding universal filter 'w3DateFilter'
+2024-09-30T17:47:28.185Z Eleventy:TemplateConfig overrides: {}
+2024-09-30T17:47:28.187Z Eleventy:TemplateConfig Current configuration: { pathPrefix: '/', markdownTemplateEngine: 'liquid', htmlTemplateEngine: 'liquid', htmlOutputSuffix: '-o', dataFileSuffixes: [ '.11tydata', '' ], dataFileDirBaseNameOverride: false, keys: { package: 'pkg', layout: 'layout', permalink: 'permalink', permalinkRoot: 'permalinkBypassOutputDir', engineOverride: 'templateEngineOverride', computed: 'eleventyComputed' }, dir: { input: '.', includes: '_includes', data: '_data', output: '_site' }, handlebarsHelpers: { slug: [Function (anonymous)], slugify: [Function (anonymous)], url: [Function (anonymous)], log: [Function (anonymous)], serverlessUrl: [Function (anonymous)], getCollectionItemIndex: [Function (anonymous)], getCollectionItem: [Function (anonymous)], getPreviousCollectionItem: [Function (anonymous)], getNextCollectionItem: [Function (anonymous)], dateFilter: [Function (anonymous)], timeFilter: [Function (anonymous)], w3DateFilter: [Function (anonymous)] }, nunjucksFilters: { slug: [Function (anonymous)], slugify: [Function (anonymous)], url: [Function (anonymous)], log: [Function (anonymous)], serverlessUrl: [Function (anonymous)], getCollectionItemIndex: [Function (anonymous)], getCollectionItem: [Function (anonymous)], getPreviousCollectionItem: [Function (anonymous)], getNextCollectionItem: [Function (anonymous)], dateFilter: [Function (anonymous)], timeFilter: [Function (anonymous)], w3DateFilter: [Function (anonymous)] }, templateFormats: [ 'liquid',   'ejs', 'md',       'hbs', 'mustache', 'haml', 'pug',      'njk', 'html',     '11ty.js' ], transforms: {}, linters: {}, globalData: {}, layoutAliases: {}, layoutResolution: true, passthroughCopies: { 'src/style.css': { outputPath: true, copyOptions: {} }, './src/images/': { outputPath: true, copyOptions: {} }, '*.html': { outputPath: true, copyOptions: {} } }, liquidOptions: {}, liquidTags: {}, liquidFilters: { slug: [Function (anonymous)], slugify: [Function (anonymous)], url: [Function (anonymous)], log: [Function (anonymous)], serverlessUrl: [Function (anonymous)], getCollectionItemIndex: [Function (anonymous)], getCollectionItem: [Function (anonymous)], getPreviousCollectionItem: [Function (anonymous)], getNextCollectionItem: [Function (anonymous)], dateFilter: [Function (anonymous)], timeFilter: [Function (anonymous)], w3DateFilter: [Function (anonymous)] }, liquidShortcodes: {}, liquidPairedShortcodes: {}, nunjucksEnvironmentOptions: {}, nunjucksPrecompiledTemplates: {}, nunjucksAsyncFilters: {}, nunjucksTags: {}, nunjucksGlobals: {}, nunjucksAsyncShortcodes: {}, nunjucksShortcodes: {}, nunjucksAsyncPairedShortcodes: {}, nunjucksPairedShortcodes: {}, handlebarsShortcodes: {}, handlebarsPairedShortcodes: {}, javascriptFunctions: { slug: [Function (anonymous)], slugify: [Function (anonymous)], url: [Function (anonymous)], log: [Function (anonymous)], serverlessUrl: [Function (anonymous)], getCollectionItemIndex: [Function (anonymous)], getCollectionItem: [Function (anonymous)], getPreviousCollectionItem: [Function (anonymous)], getNextCollectionItem: [Function (anonymous)], dateFilter: [Function (anonymous)], timeFilter: [Function (anonymous)], w3DateFilter: [Function (anonymous)] }, pugOptions: {}, ejsOptions: {}, markdownHighlighter: null, libraryOverrides: {}, dynamicPermalinks: true, useGitIgnore: true, ignores: Set(2) { '**/node_modules/**', '.git/**' }, watchIgnores: Set(2) { '**/node_modules/**', '.git/**' }, dataDeepMerge: true, watchJavaScriptDependencies: true, additionalWatchTargets: [], serverOptions: {}, chokidarConfig: {}, watchThrottleWaitTime: 0, frontMatterParsingOptions: undefined, dataExtensions: Map(0) {}, extensionMap: Set(0) {}, quietMode: false, events: AsyncEventEmitter { _events: [Object: null prototype] {}, _eventsCount: 0, _maxListeners: undefined, [Symbol(kCapture)]: false }, benchmarkManager: BenchmarkManager { benchmarkGroups: { Configuration: [BenchmarkGroup], Aggregate: [BenchmarkGroup] }, isVerbose: true, start: 288.6162021160126 }, plugins: [], useTemplateCache: true, precompiledCollections: {}, dataFilterSelectors: Set(0) {}, libraryAmendments: {}, serverPassthroughCopyBehavior: 'copy', urlTransforms: [] }
+2024-09-30T17:47:28.187Z Eleventy Eleventy warm up time (in ms) 307.23514795303345
+2024-09-30T17:47:28.190Z Eleventy:TemplatePassthroughManager Resetting counts to 0
+2024-09-30T17:47:28.192Z Eleventy:EleventyFiles .gitignore,.eleventyignore,.eleventyignore ignoring: ./_site/**
+2024-09-30T17:47:28.192Z Eleventy:EleventyFiles .gitignore,.eleventyignore,.eleventyignore ignoring: ./node_modules/**
+2024-09-30T17:47:28.192Z Eleventy:EleventyFiles .gitignore,.eleventyignore,.eleventyignore ignoring: ./package-lock.json
+2024-09-30T17:47:28.192Z Eleventy:EleventyFiles .gitignore,.eleventyignore,.eleventyignore ignoring: ./*.log
+2024-09-30T17:47:28.192Z Eleventy:EleventyFiles .gitignore,.eleventyignore,.eleventyignore ignoring: ./npm-debug.*
+2024-09-30T17:47:28.192Z Eleventy:EleventyFiles .gitignore,.eleventyignore,.eleventyignore ignoring: ./Thumbs.db
+2024-09-30T17:47:28.192Z Eleventy:EleventyFiles .gitignore,.eleventyignore,.eleventyignore ignoring: ./.cache
+2024-09-30T17:47:28.193Z Eleventy Directories:
+Input (Dir): .
+Input (File): undefined
+Data: _data
+Includes: _includes
+Layouts: undefined
+Output: _site
+Template Formats: liquid,ejs,md,hbs,mustache,haml,pug,njk,html,11ty.js
+Verbose Output: false
+2024-09-30T17:47:28.194Z Eleventy:EleventyFiles Searching for: [ './**/*.{liquid,ejs,md,hbs,mustache,haml,pug,njk,html,11ty.js,11ty.cjs}' ]
+2024-09-30T17:47:28.194Z Eleventy:FastGlobManager Glob search ('templates') searching for: [ './**/*.{liquid,ejs,md,hbs,mustache,haml,pug,njk,html,11ty.js,11ty.cjs}' ]
+2024-09-30T17:47:28.194Z Eleventy:FastGlobManager Glob search ('templates') ignoring: [ '_site/**', 'node_modules/**', 'package-lock.json', '*.log', 'npm-debug.*', 'Thumbs.db', '.cache', '_includes/**', '_data/**', '**/node_modules/**', '.git/**' ]
+2024-09-30T17:47:28.214Z Eleventy:TemplatePassthroughManager TemplatePassthrough copy started.
+2024-09-30T17:47:28.214Z Eleventy:TemplatePassthroughManager `addPassthroughCopy` config API paths: { 'src/style.css': { outputPath: true, copyOptions: {} }, './src/images/': { outputPath: true, copyOptions: {} }, '*.html': { outputPath: true, copyOptions: {} } }
+2024-09-30T17:47:28.214Z Eleventy:TemplatePassthroughManager `addPassthroughCopy` config API normalized paths: [ { inputPath: './src/style.css', outputPath: true, copyOptions: {} }, { inputPath: './src/images/', outputPath: true, copyOptions: {} }, { inputPath: './*.html', outputPath: true, copyOptions: {} } ]
+2024-09-30T17:47:28.214Z Eleventy:TemplatePassthroughManager TemplatePassthrough copying from config: { inputPath: './src/style.css', outputPath: true, copyOptions: {} }
+2024-09-30T17:47:28.214Z Eleventy:TemplatePassthroughManager TemplatePassthrough copying from config: { inputPath: './src/images/', outputPath: true, copyOptions: {} }
+2024-09-30T17:47:28.214Z Eleventy:TemplatePassthroughManager TemplatePassthrough copying from config: { inputPath: './*.html', outputPath: true, copyOptions: {} }
+2024-09-30T17:47:28.215Z Eleventy:TemplatePassthrough Copying './src/style.css'
+2024-09-30T17:47:28.215Z Eleventy:TemplatePassthrough Copying './src/images/'
+2024-09-30T17:47:28.216Z Eleventy:TemplatePassthrough Copying './*.html'
+2024-09-30T17:47:28.216Z Eleventy:TemplatePassthrough Searching for: './*.html'
+2024-09-30T17:47:28.216Z Eleventy:FastGlobManager Glob search ('passthrough') searching for: './*.html'
+2024-09-30T17:47:28.217Z Dev:Eleventy:Template new Template('./README.md')
+2024-09-30T17:47:28.218Z Dev:Eleventy:Template './README.md' getData
+2024-09-30T17:47:28.218Z Dev:Eleventy:TemplateData getLocalDataPaths('./README.md')
+2024-09-30T17:47:28.218Z Dev:Eleventy:TemplateData parsed.dir: '.'
+2024-09-30T17:47:28.218Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.218Z Dev:Eleventy:TemplateData allDirs: [ '.' ]
+2024-09-30T17:47:28.218Z Dev:Eleventy:TemplateData dirStr: '.'; inputDir: './'
+2024-09-30T17:47:28.219Z Eleventy:TemplateData getLocalDataPaths('./README.md'): [ './README.11tydata.js', './README.11tydata.cjs', './README.11tydata.json', './README.json' ]
+2024-09-30T17:47:28.219Z Eleventy:TemplateWriter ./README.md adding to template map.
+2024-09-30T17:47:28.219Z Dev:Eleventy:Template new Template('./copyright.html')
+2024-09-30T17:47:28.219Z Dev:Eleventy:Template './copyright.html' getData
+2024-09-30T17:47:28.219Z Dev:Eleventy:TemplateData getLocalDataPaths('./copyright.html')
+2024-09-30T17:47:28.219Z Dev:Eleventy:TemplateData parsed.dir: '.'
+2024-09-30T17:47:28.219Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.219Z Dev:Eleventy:TemplateData allDirs: [ '.' ]
+2024-09-30T17:47:28.219Z Dev:Eleventy:TemplateData dirStr: '.'; inputDir: './'
+2024-09-30T17:47:28.219Z Eleventy:TemplateData getLocalDataPaths('./copyright.html'): [ './copyright.11tydata.js', './copyright.11tydata.cjs', './copyright.11tydata.json', './copyright.json' ]
+2024-09-30T17:47:28.219Z Eleventy:TemplateWriter ./copyright.html adding to template map.
+2024-09-30T17:47:28.219Z Dev:Eleventy:Template new Template('./google0afb6c2dac0007ec.html')
+2024-09-30T17:47:28.219Z Dev:Eleventy:Template './google0afb6c2dac0007ec.html' getData
+2024-09-30T17:47:28.219Z Dev:Eleventy:TemplateData getLocalDataPaths('./google0afb6c2dac0007ec.html')
+2024-09-30T17:47:28.219Z Dev:Eleventy:TemplateData parsed.dir: '.'
+2024-09-30T17:47:28.219Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.219Z Dev:Eleventy:TemplateData allDirs: [ '.' ]
+2024-09-30T17:47:28.220Z Dev:Eleventy:TemplateData dirStr: '.'; inputDir: './'
+2024-09-30T17:47:28.220Z Eleventy:TemplateData getLocalDataPaths('./google0afb6c2dac0007ec.html'): [ './google0afb6c2dac0007ec.11tydata.js', './google0afb6c2dac0007ec.11tydata.cjs', './google0afb6c2dac0007ec.11tydata.json', './google0afb6c2dac0007ec.json' ]
+2024-09-30T17:47:28.220Z Eleventy:TemplateWriter ./google0afb6c2dac0007ec.html adding to template map.
+2024-09-30T17:47:28.220Z Dev:Eleventy:Template new Template('./googlea9079d5fce490705.html')
+2024-09-30T17:47:28.220Z Dev:Eleventy:Template './googlea9079d5fce490705.html' getData
+2024-09-30T17:47:28.220Z Dev:Eleventy:TemplateData getLocalDataPaths('./googlea9079d5fce490705.html')
+2024-09-30T17:47:28.220Z Dev:Eleventy:TemplateData parsed.dir: '.'
+2024-09-30T17:47:28.220Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.220Z Dev:Eleventy:TemplateData allDirs: [ '.' ]
+2024-09-30T17:47:28.220Z Dev:Eleventy:TemplateData dirStr: '.'; inputDir: './'
+2024-09-30T17:47:28.220Z Eleventy:TemplateData getLocalDataPaths('./googlea9079d5fce490705.html'): [ './googlea9079d5fce490705.11tydata.js', './googlea9079d5fce490705.11tydata.cjs', './googlea9079d5fce490705.11tydata.json', './googlea9079d5fce490705.json' ]
+2024-09-30T17:47:28.220Z Eleventy:TemplateWriter ./googlea9079d5fce490705.html adding to template map.
+2024-09-30T17:47:28.220Z Dev:Eleventy:Template new Template('./src/commons.njk')
+2024-09-30T17:47:28.220Z Dev:Eleventy:Template './src/commons.njk' getData
+2024-09-30T17:47:28.220Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons.njk')
+2024-09-30T17:47:28.220Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.220Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.220Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.220Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.221Z Eleventy:TemplateData getLocalDataPaths('./src/commons.njk'): [ './src/commons.11tydata.js', './src/commons.11tydata.cjs', './src/commons.11tydata.json', './src/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.221Z Eleventy:TemplateWriter ./src/commons.njk adding to template map.
+2024-09-30T17:47:28.221Z Dev:Eleventy:Template new Template('./src/eleventy-start.njk')
+2024-09-30T17:47:28.221Z Dev:Eleventy:Template './src/eleventy-start.njk' getData
+2024-09-30T17:47:28.221Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/eleventy-start.njk')
+2024-09-30T17:47:28.221Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.221Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.221Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.221Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.221Z Eleventy:TemplateData getLocalDataPaths('./src/eleventy-start.njk'): [ './src/eleventy-start.11tydata.js', './src/eleventy-start.11tydata.cjs', './src/eleventy-start.11tydata.json', './src/eleventy-start.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.221Z Eleventy:TemplateWriter ./src/eleventy-start.njk adding to template map.
+2024-09-30T17:47:28.221Z Dev:Eleventy:Template new Template('./src/humors.njk')
+2024-09-30T17:47:28.221Z Dev:Eleventy:Template './src/humors.njk' getData
+2024-09-30T17:47:28.221Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors.njk')
+2024-09-30T17:47:28.221Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.221Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.221Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.221Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.222Z Eleventy:TemplateData getLocalDataPaths('./src/humors.njk'): [ './src/humors.11tydata.js', './src/humors.11tydata.cjs', './src/humors.11tydata.json', './src/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.222Z Eleventy:TemplateWriter ./src/humors.njk adding to template map.
+2024-09-30T17:47:28.222Z Dev:Eleventy:Template new Template('./src/index.html')
+2024-09-30T17:47:28.222Z Dev:Eleventy:Template './src/index.html' getData
+2024-09-30T17:47:28.222Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/index.html')
+2024-09-30T17:47:28.222Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.222Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.222Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.222Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.222Z Eleventy:TemplateData getLocalDataPaths('./src/index.html'): [ './src/index.11tydata.js', './src/index.11tydata.cjs', './src/index.11tydata.json', './src/index.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.222Z Eleventy:TemplateWriter ./src/index.html adding to template map.
+2024-09-30T17:47:28.222Z Dev:Eleventy:Template new Template('./src/it-posts.njk')
+2024-09-30T17:47:28.222Z Dev:Eleventy:Template './src/it-posts.njk' getData
+2024-09-30T17:47:28.222Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/it-posts.njk')
+2024-09-30T17:47:28.222Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.222Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.223Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts.njk'): [ './src/it-posts.11tydata.js', './src/it-posts.11tydata.cjs', './src/it-posts.11tydata.json', './src/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.223Z Eleventy:TemplateWriter ./src/it-posts.njk adding to template map.
+2024-09-30T17:47:28.223Z Dev:Eleventy:Template new Template('./src/ru.njk')
+2024-09-30T17:47:28.223Z Dev:Eleventy:Template './src/ru.njk' getData
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/ru.njk')
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.223Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.223Z Eleventy:TemplateData getLocalDataPaths('./src/ru.njk'): [ './src/ru.11tydata.js', './src/ru.11tydata.cjs', './src/ru.11tydata.json', './src/ru.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.223Z Eleventy:TemplateWriter ./src/ru.njk adding to template map.
+2024-09-30T17:47:28.223Z Dev:Eleventy:Template new Template('./src/tags.njk')
+2024-09-30T17:47:28.223Z Dev:Eleventy:Template './src/tags.njk' getData
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/tags.njk')
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.223Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.223Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.223Z Eleventy:TemplateData getLocalDataPaths('./src/tags.njk'): [ './src/tags.11tydata.js', './src/tags.11tydata.cjs', './src/tags.11tydata.json', './src/tags.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.224Z Eleventy:TemplateWriter ./src/tags.njk adding to template map.
+2024-09-30T17:47:28.224Z Dev:Eleventy:Template new Template('./src/думка.njk')
+2024-09-30T17:47:28.224Z Dev:Eleventy:Template './src/думка.njk' getData
+2024-09-30T17:47:28.224Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/думка.njk')
+2024-09-30T17:47:28.224Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.224Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.224Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.224Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.225Z Eleventy:TemplateData getLocalDataPaths('./src/думка.njk'): [ './src/думка.11tydata.js', './src/думка.11tydata.cjs', './src/думка.11tydata.json', './src/думка.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.225Z Eleventy:TemplateWriter ./src/думка.njk adding to template map.
+2024-09-30T17:47:28.225Z Dev:Eleventy:Template new Template('./src/сюжет.njk')
+2024-09-30T17:47:28.225Z Dev:Eleventy:Template './src/сюжет.njk' getData
+2024-09-30T17:47:28.225Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/сюжет.njk')
+2024-09-30T17:47:28.225Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.225Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.225Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.225Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.225Z Eleventy:TemplateData getLocalDataPaths('./src/сюжет.njk'): [ './src/сюжет.11tydata.js', './src/сюжет.11tydata.cjs', './src/сюжет.11tydata.json', './src/сюжет.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.225Z Eleventy:TemplateWriter ./src/сюжет.njk adding to template map.
+2024-09-30T17:47:28.225Z Dev:Eleventy:Template new Template('./src/ідея.njk')
+2024-09-30T17:47:28.225Z Dev:Eleventy:Template './src/ідея.njk' getData
+2024-09-30T17:47:28.225Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/ідея.njk')
+2024-09-30T17:47:28.225Z Dev:Eleventy:TemplateData parsed.dir: './src'
+2024-09-30T17:47:28.225Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.225Z Dev:Eleventy:TemplateData allDirs: [ './src' ]
+2024-09-30T17:47:28.225Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.226Z Eleventy:TemplateData getLocalDataPaths('./src/ідея.njk'): [ './src/ідея.11tydata.js', './src/ідея.11tydata.cjs', './src/ідея.11tydata.json', './src/ідея.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.226Z Eleventy:TemplateWriter ./src/ідея.njk adding to template map.
+2024-09-30T17:47:28.226Z Dev:Eleventy:Template new Template('./src/_includes/collection-list.njk')
+2024-09-30T17:47:28.226Z Dev:Eleventy:Template './src/_includes/collection-list.njk' getData
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/_includes/collection-list.njk')
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData parsed.dir: './src/_includes'
+2024-09-30T17:47:28.226Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData allDirs: [ './src/_includes', './src' ]
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData dirStr: './src/_includes'; inputDir: './'
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.226Z Eleventy:TemplateData getLocalDataPaths('./src/_includes/collection-list.njk'): [ './src/_includes/collection-list.11tydata.js', './src/_includes/collection-list.11tydata.cjs', './src/_includes/collection-list.11tydata.json', './src/_includes/collection-list.json', './src/_includes/_includes.11tydata.js', './src/_includes/_includes.11tydata.cjs', './src/_includes/_includes.11tydata.json', './src/_includes/_includes.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.226Z Eleventy:TemplateWriter ./src/_includes/collection-list.njk adding to template map.
+2024-09-30T17:47:28.226Z Dev:Eleventy:Template new Template('./src/_includes/collection-posts.njk')
+2024-09-30T17:47:28.226Z Dev:Eleventy:Template './src/_includes/collection-posts.njk' getData
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/_includes/collection-posts.njk')
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData parsed.dir: './src/_includes'
+2024-09-30T17:47:28.226Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData allDirs: [ './src/_includes', './src' ]
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData dirStr: './src/_includes'; inputDir: './'
+2024-09-30T17:47:28.226Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.227Z Eleventy:TemplateData getLocalDataPaths('./src/_includes/collection-posts.njk'): [ './src/_includes/collection-posts.11tydata.js', './src/_includes/collection-posts.11tydata.cjs', './src/_includes/collection-posts.11tydata.json', './src/_includes/collection-posts.json', './src/_includes/_includes.11tydata.js', './src/_includes/_includes.11tydata.cjs', './src/_includes/_includes.11tydata.json', './src/_includes/_includes.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.227Z Eleventy:TemplateWriter ./src/_includes/collection-posts.njk adding to template map.
+2024-09-30T17:47:28.227Z Dev:Eleventy:Template new Template('./src/_includes/humor.njk')
+2024-09-30T17:47:28.227Z Dev:Eleventy:Template './src/_includes/humor.njk' getData
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/_includes/humor.njk')
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData parsed.dir: './src/_includes'
+2024-09-30T17:47:28.227Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData allDirs: [ './src/_includes', './src' ]
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData dirStr: './src/_includes'; inputDir: './'
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.227Z Eleventy:TemplateData getLocalDataPaths('./src/_includes/humor.njk'): [ './src/_includes/humor.11tydata.js', './src/_includes/humor.11tydata.cjs', './src/_includes/humor.11tydata.json', './src/_includes/humor.json', './src/_includes/_includes.11tydata.js', './src/_includes/_includes.11tydata.cjs', './src/_includes/_includes.11tydata.json', './src/_includes/_includes.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.227Z Eleventy:TemplateWriter ./src/_includes/humor.njk adding to template map.
+2024-09-30T17:47:28.227Z Dev:Eleventy:Template new Template('./src/_includes/layout.njk')
+2024-09-30T17:47:28.227Z Dev:Eleventy:Template './src/_includes/layout.njk' getData
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/_includes/layout.njk')
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData parsed.dir: './src/_includes'
+2024-09-30T17:47:28.227Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData allDirs: [ './src/_includes', './src' ]
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData dirStr: './src/_includes'; inputDir: './'
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.227Z Eleventy:TemplateData getLocalDataPaths('./src/_includes/layout.njk'): [ './src/_includes/layout.11tydata.js', './src/_includes/layout.11tydata.cjs', './src/_includes/layout.11tydata.json', './src/_includes/layout.json', './src/_includes/_includes.11tydata.js', './src/_includes/_includes.11tydata.cjs', './src/_includes/_includes.11tydata.json', './src/_includes/_includes.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.227Z Eleventy:TemplateWriter ./src/_includes/layout.njk adding to template map.
+2024-09-30T17:47:28.227Z Dev:Eleventy:Template new Template('./src/_includes/post.njk')
+2024-09-30T17:47:28.227Z Dev:Eleventy:Template './src/_includes/post.njk' getData
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/_includes/post.njk')
+2024-09-30T17:47:28.227Z Dev:Eleventy:TemplateData parsed.dir: './src/_includes'
+2024-09-30T17:47:28.227Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData allDirs: [ './src/_includes', './src' ]
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData dirStr: './src/_includes'; inputDir: './'
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.228Z Eleventy:TemplateData getLocalDataPaths('./src/_includes/post.njk'): [ './src/_includes/post.11tydata.js', './src/_includes/post.11tydata.cjs', './src/_includes/post.11tydata.json', './src/_includes/post.json', './src/_includes/_includes.11tydata.js', './src/_includes/_includes.11tydata.cjs', './src/_includes/_includes.11tydata.json', './src/_includes/_includes.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.228Z Eleventy:TemplateWriter ./src/_includes/post.njk adding to template map.
+2024-09-30T17:47:28.228Z Dev:Eleventy:Template new Template('./src/commons/2024-03-01-pokarannya_za_dobri_spravy.md')
+2024-09-30T17:47:28.228Z Dev:Eleventy:Template './src/commons/2024-03-01-pokarannya_za_dobri_spravy.md' getData
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-03-01-pokarannya_za_dobri_spravy.md')
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData parsed.dir: './src/commons'
+2024-09-30T17:47:28.228Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData allDirs: [ './src/commons', './src' ]
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData dirStr: './src/commons'; inputDir: './'
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.228Z Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-03-01-pokarannya_za_dobri_spravy.md'): [ './src/commons/2024-03-01-pokarannya_za_dobri_spravy.11tydata.js', './src/commons/2024-03-01-pokarannya_za_dobri_spravy.11tydata.cjs', './src/commons/2024-03-01-pokarannya_za_dobri_spravy.11tydata.json', './src/commons/2024-03-01-pokarannya_za_dobri_spravy.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.228Z Eleventy:TemplateWriter ./src/commons/2024-03-01-pokarannya_za_dobri_spravy.md adding to template map.
+2024-09-30T17:47:28.228Z Dev:Eleventy:Template new Template('./src/commons/2024-04-10-ustriystvo_dlya_tishiny.md')
+2024-09-30T17:47:28.228Z Dev:Eleventy:Template './src/commons/2024-04-10-ustriystvo_dlya_tishiny.md' getData
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-04-10-ustriystvo_dlya_tishiny.md')
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData parsed.dir: './src/commons'
+2024-09-30T17:47:28.228Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData allDirs: [ './src/commons', './src' ]
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData dirStr: './src/commons'; inputDir: './'
+2024-09-30T17:47:28.228Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.229Z Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-04-10-ustriystvo_dlya_tishiny.md'): [ './src/commons/2024-04-10-ustriystvo_dlya_tishiny.11tydata.js', './src/commons/2024-04-10-ustriystvo_dlya_tishiny.11tydata.cjs', './src/commons/2024-04-10-ustriystvo_dlya_tishiny.11tydata.json', './src/commons/2024-04-10-ustriystvo_dlya_tishiny.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.229Z Eleventy:TemplateWriter ./src/commons/2024-04-10-ustriystvo_dlya_tishiny.md adding to template map.
+2024-09-30T17:47:28.229Z Dev:Eleventy:Template new Template('./src/commons/2024-05-02-trademak-Gnizdo-Nest.md')
+2024-09-30T17:47:28.229Z Dev:Eleventy:Template './src/commons/2024-05-02-trademak-Gnizdo-Nest.md' getData
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-05-02-trademak-Gnizdo-Nest.md')
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData parsed.dir: './src/commons'
+2024-09-30T17:47:28.229Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData allDirs: [ './src/commons', './src' ]
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData dirStr: './src/commons'; inputDir: './'
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.229Z Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-05-02-trademak-Gnizdo-Nest.md'): [ './src/commons/2024-05-02-trademak-Gnizdo-Nest.11tydata.js', './src/commons/2024-05-02-trademak-Gnizdo-Nest.11tydata.cjs', './src/commons/2024-05-02-trademak-Gnizdo-Nest.11tydata.json', './src/commons/2024-05-02-trademak-Gnizdo-Nest.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.229Z Eleventy:TemplateWriter ./src/commons/2024-05-02-trademak-Gnizdo-Nest.md adding to template map.
+2024-09-30T17:47:28.229Z Dev:Eleventy:Template new Template('./src/commons/2024-05-13-manyak-control.md')
+2024-09-30T17:47:28.229Z Dev:Eleventy:Template './src/commons/2024-05-13-manyak-control.md' getData
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-05-13-manyak-control.md')
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData parsed.dir: './src/commons'
+2024-09-30T17:47:28.229Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData allDirs: [ './src/commons', './src' ]
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData dirStr: './src/commons'; inputDir: './'
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.229Z Eleventy:TemplateData getLocalDataPaths('./src/commons/2024-05-13-manyak-control.md'): [ './src/commons/2024-05-13-manyak-control.11tydata.js', './src/commons/2024-05-13-manyak-control.11tydata.cjs', './src/commons/2024-05-13-manyak-control.11tydata.json', './src/commons/2024-05-13-manyak-control.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.229Z Eleventy:TemplateWriter ./src/commons/2024-05-13-manyak-control.md adding to template map.
+2024-09-30T17:47:28.229Z Dev:Eleventy:Template new Template('./src/commons/full-control.md')
+2024-09-30T17:47:28.229Z Dev:Eleventy:Template './src/commons/full-control.md' getData
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons/full-control.md')
+2024-09-30T17:47:28.229Z Dev:Eleventy:TemplateData parsed.dir: './src/commons'
+2024-09-30T17:47:28.229Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData allDirs: [ './src/commons', './src' ]
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData dirStr: './src/commons'; inputDir: './'
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.230Z Eleventy:TemplateData getLocalDataPaths('./src/commons/full-control.md'): [ './src/commons/full-control.11tydata.js', './src/commons/full-control.11tydata.cjs', './src/commons/full-control.11tydata.json', './src/commons/full-control.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.230Z Eleventy:TemplateWriter ./src/commons/full-control.md adding to template map.
+2024-09-30T17:47:28.230Z Dev:Eleventy:Template new Template('./src/commons/poglyad-na-stvorenntya.md')
+2024-09-30T17:47:28.230Z Dev:Eleventy:Template './src/commons/poglyad-na-stvorenntya.md' getData
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons/poglyad-na-stvorenntya.md')
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData parsed.dir: './src/commons'
+2024-09-30T17:47:28.230Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData allDirs: [ './src/commons', './src' ]
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData dirStr: './src/commons'; inputDir: './'
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.230Z Eleventy:TemplateData getLocalDataPaths('./src/commons/poglyad-na-stvorenntya.md'): [ './src/commons/poglyad-na-stvorenntya.11tydata.js', './src/commons/poglyad-na-stvorenntya.11tydata.cjs', './src/commons/poglyad-na-stvorenntya.11tydata.json', './src/commons/poglyad-na-stvorenntya.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.230Z Eleventy:TemplateWriter ./src/commons/poglyad-na-stvorenntya.md adding to template map.
+2024-09-30T17:47:28.230Z Dev:Eleventy:Template new Template('./src/commons/portret_tvorcya.md')
+2024-09-30T17:47:28.230Z Dev:Eleventy:Template './src/commons/portret_tvorcya.md' getData
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons/portret_tvorcya.md')
+2024-09-30T17:47:28.230Z Dev:Eleventy:TemplateData parsed.dir: './src/commons'
+2024-09-30T17:47:28.230Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData allDirs: [ './src/commons', './src' ]
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData dirStr: './src/commons'; inputDir: './'
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.231Z Eleventy:TemplateData getLocalDataPaths('./src/commons/portret_tvorcya.md'): [ './src/commons/portret_tvorcya.11tydata.js', './src/commons/portret_tvorcya.11tydata.cjs', './src/commons/portret_tvorcya.11tydata.json', './src/commons/portret_tvorcya.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.231Z Eleventy:TemplateWriter ./src/commons/portret_tvorcya.md adding to template map.
+2024-09-30T17:47:28.231Z Dev:Eleventy:Template new Template('./src/commons/space-lottery.md')
+2024-09-30T17:47:28.231Z Dev:Eleventy:Template './src/commons/space-lottery.md' getData
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons/space-lottery.md')
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData parsed.dir: './src/commons'
+2024-09-30T17:47:28.231Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData allDirs: [ './src/commons', './src' ]
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData dirStr: './src/commons'; inputDir: './'
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.231Z Eleventy:TemplateData getLocalDataPaths('./src/commons/space-lottery.md'): [ './src/commons/space-lottery.11tydata.js', './src/commons/space-lottery.11tydata.cjs', './src/commons/space-lottery.11tydata.json', './src/commons/space-lottery.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.231Z Eleventy:TemplateWriter ./src/commons/space-lottery.md adding to template map.
+2024-09-30T17:47:28.231Z Dev:Eleventy:Template new Template('./src/commons/sperm-from-the-past.md')
+2024-09-30T17:47:28.231Z Dev:Eleventy:Template './src/commons/sperm-from-the-past.md' getData
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/commons/sperm-from-the-past.md')
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData parsed.dir: './src/commons'
+2024-09-30T17:47:28.231Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData allDirs: [ './src/commons', './src' ]
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData dirStr: './src/commons'; inputDir: './'
+2024-09-30T17:47:28.231Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.232Z Eleventy:TemplateData getLocalDataPaths('./src/commons/sperm-from-the-past.md'): [ './src/commons/sperm-from-the-past.11tydata.js', './src/commons/sperm-from-the-past.11tydata.cjs', './src/commons/sperm-from-the-past.11tydata.json', './src/commons/sperm-from-the-past.json', './src/commons/commons.11tydata.js', './src/commons/commons.11tydata.cjs', './src/commons/commons.11tydata.json', './src/commons/commons.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.232Z Eleventy:TemplateWriter ./src/commons/sperm-from-the-past.md adding to template map.
+2024-09-30T17:47:28.232Z Dev:Eleventy:Template new Template('./src/humors/2021-05-08-french-frog.md')
+2024-09-30T17:47:28.232Z Dev:Eleventy:Template './src/humors/2021-05-08-french-frog.md' getData
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/2021-05-08-french-frog.md')
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.232Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.232Z Eleventy:TemplateData getLocalDataPaths('./src/humors/2021-05-08-french-frog.md'): [ './src/humors/2021-05-08-french-frog.11tydata.js', './src/humors/2021-05-08-french-frog.11tydata.cjs', './src/humors/2021-05-08-french-frog.11tydata.json', './src/humors/2021-05-08-french-frog.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.232Z Eleventy:TemplateWriter ./src/humors/2021-05-08-french-frog.md adding to template map.
+2024-09-30T17:47:28.232Z Dev:Eleventy:Template new Template('./src/humors/2021-08-09-one-hundred-suite.md')
+2024-09-30T17:47:28.232Z Dev:Eleventy:Template './src/humors/2021-08-09-one-hundred-suite.md' getData
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/2021-08-09-one-hundred-suite.md')
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.232Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.232Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.232Z Eleventy:TemplateData getLocalDataPaths('./src/humors/2021-08-09-one-hundred-suite.md'): [ './src/humors/2021-08-09-one-hundred-suite.11tydata.js', './src/humors/2021-08-09-one-hundred-suite.11tydata.cjs', './src/humors/2021-08-09-one-hundred-suite.11tydata.json', './src/humors/2021-08-09-one-hundred-suite.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.232Z Eleventy:TemplateWriter ./src/humors/2021-08-09-one-hundred-suite.md adding to template map.
+2024-09-30T17:47:28.232Z Dev:Eleventy:Template new Template('./src/humors/alko.md')
+2024-09-30T17:47:28.233Z Dev:Eleventy:Template './src/humors/alko.md' getData
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/alko.md')
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.233Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.233Z Eleventy:TemplateData getLocalDataPaths('./src/humors/alko.md'): [ './src/humors/alko.11tydata.js', './src/humors/alko.11tydata.cjs', './src/humors/alko.11tydata.json', './src/humors/alko.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.233Z Eleventy:TemplateWriter ./src/humors/alko.md adding to template map.
+2024-09-30T17:47:28.233Z Dev:Eleventy:Template new Template('./src/humors/all.md')
+2024-09-30T17:47:28.233Z Dev:Eleventy:Template './src/humors/all.md' getData
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/all.md')
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.233Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.233Z Eleventy:TemplateData getLocalDataPaths('./src/humors/all.md'): [ './src/humors/all.11tydata.js', './src/humors/all.11tydata.cjs', './src/humors/all.11tydata.json', './src/humors/all.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.233Z Eleventy:TemplateWriter ./src/humors/all.md adding to template map.
+2024-09-30T17:47:28.233Z Dev:Eleventy:Template new Template('./src/humors/all2.md')
+2024-09-30T17:47:28.233Z Dev:Eleventy:Template './src/humors/all2.md' getData
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/all2.md')
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.233Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.233Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.234Z Eleventy:TemplateData getLocalDataPaths('./src/humors/all2.md'): [ './src/humors/all2.11tydata.js', './src/humors/all2.11tydata.cjs', './src/humors/all2.11tydata.json', './src/humors/all2.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.234Z Eleventy:TemplateWriter ./src/humors/all2.md adding to template map.
+2024-09-30T17:47:28.234Z Dev:Eleventy:Template new Template('./src/humors/analysis.md')
+2024-09-30T17:47:28.234Z Dev:Eleventy:Template './src/humors/analysis.md' getData
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/analysis.md')
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.234Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.234Z Eleventy:TemplateData getLocalDataPaths('./src/humors/analysis.md'): [ './src/humors/analysis.11tydata.js', './src/humors/analysis.11tydata.cjs', './src/humors/analysis.11tydata.json', './src/humors/analysis.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.234Z Eleventy:TemplateWriter ./src/humors/analysis.md adding to template map.
+2024-09-30T17:47:28.234Z Dev:Eleventy:Template new Template('./src/humors/answers.md')
+2024-09-30T17:47:28.234Z Dev:Eleventy:Template './src/humors/answers.md' getData
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/answers.md')
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.234Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.234Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.234Z Eleventy:TemplateData getLocalDataPaths('./src/humors/answers.md'): [ './src/humors/answers.11tydata.js', './src/humors/answers.11tydata.cjs', './src/humors/answers.11tydata.json', './src/humors/answers.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.234Z Eleventy:TemplateWriter ./src/humors/answers.md adding to template map.
+2024-09-30T17:47:28.234Z Dev:Eleventy:Template new Template('./src/humors/antisemit.md')
+2024-09-30T17:47:28.235Z Dev:Eleventy:Template './src/humors/antisemit.md' getData
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/antisemit.md')
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.235Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.235Z Eleventy:TemplateData getLocalDataPaths('./src/humors/antisemit.md'): [ './src/humors/antisemit.11tydata.js', './src/humors/antisemit.11tydata.cjs', './src/humors/antisemit.11tydata.json', './src/humors/antisemit.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.235Z Eleventy:TemplateWriter ./src/humors/antisemit.md adding to template map.
+2024-09-30T17:47:28.235Z Dev:Eleventy:Template new Template('./src/humors/approach-to-women.md')
+2024-09-30T17:47:28.235Z Dev:Eleventy:Template './src/humors/approach-to-women.md' getData
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/approach-to-women.md')
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.235Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.235Z Eleventy:TemplateData getLocalDataPaths('./src/humors/approach-to-women.md'): [ './src/humors/approach-to-women.11tydata.js', './src/humors/approach-to-women.11tydata.cjs', './src/humors/approach-to-women.11tydata.json', './src/humors/approach-to-women.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.235Z Eleventy:TemplateWriter ./src/humors/approach-to-women.md adding to template map.
+2024-09-30T17:47:28.235Z Dev:Eleventy:Template new Template('./src/humors/articulate.md')
+2024-09-30T17:47:28.235Z Dev:Eleventy:Template './src/humors/articulate.md' getData
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/articulate.md')
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.235Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.235Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.236Z Eleventy:TemplateData getLocalDataPaths('./src/humors/articulate.md'): [ './src/humors/articulate.11tydata.js', './src/humors/articulate.11tydata.cjs', './src/humors/articulate.11tydata.json', './src/humors/articulate.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.236Z Eleventy:TemplateWriter ./src/humors/articulate.md adding to template map.
+2024-09-30T17:47:28.236Z Dev:Eleventy:Template new Template('./src/humors/atomic-beer.md')
+2024-09-30T17:47:28.236Z Dev:Eleventy:Template './src/humors/atomic-beer.md' getData
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/atomic-beer.md')
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.236Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.236Z Eleventy:TemplateData getLocalDataPaths('./src/humors/atomic-beer.md'): [ './src/humors/atomic-beer.11tydata.js', './src/humors/atomic-beer.11tydata.cjs', './src/humors/atomic-beer.11tydata.json', './src/humors/atomic-beer.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.236Z Eleventy:TemplateWriter ./src/humors/atomic-beer.md adding to template map.
+2024-09-30T17:47:28.236Z Dev:Eleventy:Template new Template('./src/humors/bad-feeding.md')
+2024-09-30T17:47:28.236Z Dev:Eleventy:Template './src/humors/bad-feeding.md' getData
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/bad-feeding.md')
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.236Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.236Z Eleventy:TemplateData getLocalDataPaths('./src/humors/bad-feeding.md'): [ './src/humors/bad-feeding.11tydata.js', './src/humors/bad-feeding.11tydata.cjs', './src/humors/bad-feeding.11tydata.json', './src/humors/bad-feeding.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.236Z Eleventy:TemplateWriter ./src/humors/bad-feeding.md adding to template map.
+2024-09-30T17:47:28.236Z Dev:Eleventy:Template new Template('./src/humors/bald.md')
+2024-09-30T17:47:28.236Z Dev:Eleventy:Template './src/humors/bald.md' getData
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/bald.md')
+2024-09-30T17:47:28.236Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.237Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.237Z Eleventy:TemplateData getLocalDataPaths('./src/humors/bald.md'): [ './src/humors/bald.11tydata.js', './src/humors/bald.11tydata.cjs', './src/humors/bald.11tydata.json', './src/humors/bald.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.237Z Eleventy:TemplateWriter ./src/humors/bald.md adding to template map.
+2024-09-30T17:47:28.237Z Dev:Eleventy:Template new Template('./src/humors/bed-throw.md')
+2024-09-30T17:47:28.237Z Dev:Eleventy:Template './src/humors/bed-throw.md' getData
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/bed-throw.md')
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.237Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.237Z Eleventy:TemplateData getLocalDataPaths('./src/humors/bed-throw.md'): [ './src/humors/bed-throw.11tydata.js', './src/humors/bed-throw.11tydata.cjs', './src/humors/bed-throw.11tydata.json', './src/humors/bed-throw.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.237Z Eleventy:TemplateWriter ./src/humors/bed-throw.md adding to template map.
+2024-09-30T17:47:28.237Z Dev:Eleventy:Template new Template('./src/humors/bezzahyst.md')
+2024-09-30T17:47:28.237Z Dev:Eleventy:Template './src/humors/bezzahyst.md' getData
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/bezzahyst.md')
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.237Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.237Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.237Z Eleventy:TemplateData getLocalDataPaths('./src/humors/bezzahyst.md'): [ './src/humors/bezzahyst.11tydata.js', './src/humors/bezzahyst.11tydata.cjs', './src/humors/bezzahyst.11tydata.json', './src/humors/bezzahyst.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.237Z Eleventy:TemplateWriter ./src/humors/bezzahyst.md adding to template map.
+2024-09-30T17:47:28.237Z Dev:Eleventy:Template new Template('./src/humors/career.md')
+2024-09-30T17:47:28.238Z Dev:Eleventy:Template './src/humors/career.md' getData
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/career.md')
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.238Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.238Z Eleventy:TemplateData getLocalDataPaths('./src/humors/career.md'): [ './src/humors/career.11tydata.js', './src/humors/career.11tydata.cjs', './src/humors/career.11tydata.json', './src/humors/career.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.238Z Eleventy:TemplateWriter ./src/humors/career.md adding to template map.
+2024-09-30T17:47:28.238Z Dev:Eleventy:Template new Template('./src/humors/carry.md')
+2024-09-30T17:47:28.238Z Dev:Eleventy:Template './src/humors/carry.md' getData
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/carry.md')
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.238Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.238Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.238Z Eleventy:TemplateData getLocalDataPaths('./src/humors/carry.md'): [ './src/humors/carry.11tydata.js', './src/humors/carry.11tydata.cjs', './src/humors/carry.11tydata.json', './src/humors/carry.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.238Z Eleventy:TemplateWriter ./src/humors/carry.md adding to template map.
+2024-09-30T17:47:28.238Z Dev:Eleventy:Template new Template('./src/humors/clean.md')
+2024-09-30T17:47:28.238Z Dev:Eleventy:Template './src/humors/clean.md' getData
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/clean.md')
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.239Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.239Z Eleventy:TemplateData getLocalDataPaths('./src/humors/clean.md'): [ './src/humors/clean.11tydata.js', './src/humors/clean.11tydata.cjs', './src/humors/clean.11tydata.json', './src/humors/clean.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.239Z Eleventy:TemplateWriter ./src/humors/clean.md adding to template map.
+2024-09-30T17:47:28.239Z Dev:Eleventy:Template new Template('./src/humors/clearly.md')
+2024-09-30T17:47:28.239Z Dev:Eleventy:Template './src/humors/clearly.md' getData
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/clearly.md')
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.239Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.239Z Eleventy:TemplateData getLocalDataPaths('./src/humors/clearly.md'): [ './src/humors/clearly.11tydata.js', './src/humors/clearly.11tydata.cjs', './src/humors/clearly.11tydata.json', './src/humors/clearly.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.239Z Eleventy:TemplateWriter ./src/humors/clearly.md adding to template map.
+2024-09-30T17:47:28.239Z Dev:Eleventy:Template new Template('./src/humors/compare.md')
+2024-09-30T17:47:28.239Z Dev:Eleventy:Template './src/humors/compare.md' getData
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/compare.md')
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.239Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.239Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.239Z Eleventy:TemplateData getLocalDataPaths('./src/humors/compare.md'): [ './src/humors/compare.11tydata.js', './src/humors/compare.11tydata.cjs', './src/humors/compare.11tydata.json', './src/humors/compare.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.239Z Eleventy:TemplateWriter ./src/humors/compare.md adding to template map.
+2024-09-30T17:47:28.240Z Dev:Eleventy:Template new Template('./src/humors/covid.md')
+2024-09-30T17:47:28.240Z Dev:Eleventy:Template './src/humors/covid.md' getData
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/covid.md')
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.240Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.240Z Eleventy:TemplateData getLocalDataPaths('./src/humors/covid.md'): [ './src/humors/covid.11tydata.js', './src/humors/covid.11tydata.cjs', './src/humors/covid.11tydata.json', './src/humors/covid.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.240Z Eleventy:TemplateWriter ./src/humors/covid.md adding to template map.
+2024-09-30T17:47:28.240Z Dev:Eleventy:Template new Template('./src/humors/dirty-kiss.md')
+2024-09-30T17:47:28.240Z Dev:Eleventy:Template './src/humors/dirty-kiss.md' getData
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/dirty-kiss.md')
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.240Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.240Z Eleventy:TemplateData getLocalDataPaths('./src/humors/dirty-kiss.md'): [ './src/humors/dirty-kiss.11tydata.js', './src/humors/dirty-kiss.11tydata.cjs', './src/humors/dirty-kiss.11tydata.json', './src/humors/dirty-kiss.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.240Z Eleventy:TemplateWriter ./src/humors/dirty-kiss.md adding to template map.
+2024-09-30T17:47:28.240Z Dev:Eleventy:Template new Template('./src/humors/disappointment.md')
+2024-09-30T17:47:28.240Z Dev:Eleventy:Template './src/humors/disappointment.md' getData
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/disappointment.md')
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.240Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.240Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.241Z Eleventy:TemplateData getLocalDataPaths('./src/humors/disappointment.md'): [ './src/humors/disappointment.11tydata.js', './src/humors/disappointment.11tydata.cjs', './src/humors/disappointment.11tydata.json', './src/humors/disappointment.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.241Z Eleventy:TemplateWriter ./src/humors/disappointment.md adding to template map.
+2024-09-30T17:47:28.241Z Dev:Eleventy:Template new Template('./src/humors/double.md')
+2024-09-30T17:47:28.241Z Dev:Eleventy:Template './src/humors/double.md' getData
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/double.md')
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.241Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.241Z Eleventy:TemplateData getLocalDataPaths('./src/humors/double.md'): [ './src/humors/double.11tydata.js', './src/humors/double.11tydata.cjs', './src/humors/double.11tydata.json', './src/humors/double.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.241Z Eleventy:TemplateWriter ./src/humors/double.md adding to template map.
+2024-09-30T17:47:28.241Z Dev:Eleventy:Template new Template('./src/humors/duble-pleasure.md')
+2024-09-30T17:47:28.241Z Dev:Eleventy:Template './src/humors/duble-pleasure.md' getData
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/duble-pleasure.md')
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.241Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.241Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.241Z Eleventy:TemplateData getLocalDataPaths('./src/humors/duble-pleasure.md'): [ './src/humors/duble-pleasure.11tydata.js', './src/humors/duble-pleasure.11tydata.cjs', './src/humors/duble-pleasure.11tydata.json', './src/humors/duble-pleasure.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.241Z Eleventy:TemplateWriter ./src/humors/duble-pleasure.md adding to template map.
+2024-09-30T17:47:28.241Z Dev:Eleventy:Template new Template('./src/humors/exam.md')
+2024-09-30T17:47:28.242Z Dev:Eleventy:Template './src/humors/exam.md' getData
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/exam.md')
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.242Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.242Z Eleventy:TemplateData getLocalDataPaths('./src/humors/exam.md'): [ './src/humors/exam.11tydata.js', './src/humors/exam.11tydata.cjs', './src/humors/exam.11tydata.json', './src/humors/exam.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.242Z Eleventy:TemplateWriter ./src/humors/exam.md adding to template map.
+2024-09-30T17:47:28.242Z Dev:Eleventy:Template new Template('./src/humors/fortunately.md')
+2024-09-30T17:47:28.242Z Dev:Eleventy:Template './src/humors/fortunately.md' getData
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/fortunately.md')
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.242Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.242Z Eleventy:TemplateData getLocalDataPaths('./src/humors/fortunately.md'): [ './src/humors/fortunately.11tydata.js', './src/humors/fortunately.11tydata.cjs', './src/humors/fortunately.11tydata.json', './src/humors/fortunately.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.242Z Eleventy:TemplateWriter ./src/humors/fortunately.md adding to template map.
+2024-09-30T17:47:28.242Z Dev:Eleventy:Template new Template('./src/humors/guesswork.md')
+2024-09-30T17:47:28.242Z Dev:Eleventy:Template './src/humors/guesswork.md' getData
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/guesswork.md')
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.242Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.242Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.242Z Eleventy:TemplateData getLocalDataPaths('./src/humors/guesswork.md'): [ './src/humors/guesswork.11tydata.js', './src/humors/guesswork.11tydata.cjs', './src/humors/guesswork.11tydata.json', './src/humors/guesswork.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.243Z Eleventy:TemplateWriter ./src/humors/guesswork.md adding to template map.
+2024-09-30T17:47:28.243Z Dev:Eleventy:Template new Template('./src/humors/hand-wash.md')
+2024-09-30T17:47:28.243Z Dev:Eleventy:Template './src/humors/hand-wash.md' getData
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/hand-wash.md')
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.243Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.243Z Eleventy:TemplateData getLocalDataPaths('./src/humors/hand-wash.md'): [ './src/humors/hand-wash.11tydata.js', './src/humors/hand-wash.11tydata.cjs', './src/humors/hand-wash.11tydata.json', './src/humors/hand-wash.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.243Z Eleventy:TemplateWriter ./src/humors/hand-wash.md adding to template map.
+2024-09-30T17:47:28.243Z Dev:Eleventy:Template new Template('./src/humors/humanity.md')
+2024-09-30T17:47:28.243Z Dev:Eleventy:Template './src/humors/humanity.md' getData
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/humanity.md')
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.243Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.243Z Eleventy:TemplateData getLocalDataPaths('./src/humors/humanity.md'): [ './src/humors/humanity.11tydata.js', './src/humors/humanity.11tydata.cjs', './src/humors/humanity.11tydata.json', './src/humors/humanity.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.243Z Eleventy:TemplateWriter ./src/humors/humanity.md adding to template map.
+2024-09-30T17:47:28.243Z Dev:Eleventy:Template new Template('./src/humors/jewish-telegram.md')
+2024-09-30T17:47:28.243Z Dev:Eleventy:Template './src/humors/jewish-telegram.md' getData
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/jewish-telegram.md')
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.243Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.243Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.244Z Eleventy:TemplateData getLocalDataPaths('./src/humors/jewish-telegram.md'): [ './src/humors/jewish-telegram.11tydata.js', './src/humors/jewish-telegram.11tydata.cjs', './src/humors/jewish-telegram.11tydata.json', './src/humors/jewish-telegram.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.244Z Eleventy:TemplateWriter ./src/humors/jewish-telegram.md adding to template map.
+2024-09-30T17:47:28.244Z Dev:Eleventy:Template new Template('./src/humors/judaism.md')
+2024-09-30T17:47:28.244Z Dev:Eleventy:Template './src/humors/judaism.md' getData
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/judaism.md')
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.244Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.244Z Eleventy:TemplateData getLocalDataPaths('./src/humors/judaism.md'): [ './src/humors/judaism.11tydata.js', './src/humors/judaism.11tydata.cjs', './src/humors/judaism.11tydata.json', './src/humors/judaism.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.244Z Eleventy:TemplateWriter ./src/humors/judaism.md adding to template map.
+2024-09-30T17:47:28.244Z Dev:Eleventy:Template new Template('./src/humors/kamasutra-battle.md')
+2024-09-30T17:47:28.244Z Dev:Eleventy:Template './src/humors/kamasutra-battle.md' getData
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/kamasutra-battle.md')
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.244Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.244Z Eleventy:TemplateData getLocalDataPaths('./src/humors/kamasutra-battle.md'): [ './src/humors/kamasutra-battle.11tydata.js', './src/humors/kamasutra-battle.11tydata.cjs', './src/humors/kamasutra-battle.11tydata.json', './src/humors/kamasutra-battle.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.244Z Eleventy:TemplateWriter ./src/humors/kamasutra-battle.md adding to template map.
+2024-09-30T17:47:28.244Z Dev:Eleventy:Template new Template('./src/humors/kva.md')
+2024-09-30T17:47:28.244Z Dev:Eleventy:Template './src/humors/kva.md' getData
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/kva.md')
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.244Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.244Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.245Z Eleventy:TemplateData getLocalDataPaths('./src/humors/kva.md'): [ './src/humors/kva.11tydata.js', './src/humors/kva.11tydata.cjs', './src/humors/kva.11tydata.json', './src/humors/kva.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.245Z Eleventy:TemplateWriter ./src/humors/kva.md adding to template map.
+2024-09-30T17:47:28.245Z Dev:Eleventy:Template new Template('./src/humors/left.md')
+2024-09-30T17:47:28.245Z Dev:Eleventy:Template './src/humors/left.md' getData
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/left.md')
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.245Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.245Z Eleventy:TemplateData getLocalDataPaths('./src/humors/left.md'): [ './src/humors/left.11tydata.js', './src/humors/left.11tydata.cjs', './src/humors/left.11tydata.json', './src/humors/left.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.245Z Eleventy:TemplateWriter ./src/humors/left.md adding to template map.
+2024-09-30T17:47:28.245Z Dev:Eleventy:Template new Template('./src/humors/lenkocites.md')
+2024-09-30T17:47:28.245Z Dev:Eleventy:Template './src/humors/lenkocites.md' getData
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/lenkocites.md')
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.245Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.245Z Eleventy:TemplateData getLocalDataPaths('./src/humors/lenkocites.md'): [ './src/humors/lenkocites.11tydata.js', './src/humors/lenkocites.11tydata.cjs', './src/humors/lenkocites.11tydata.json', './src/humors/lenkocites.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.245Z Eleventy:TemplateWriter ./src/humors/lenkocites.md adding to template map.
+2024-09-30T17:47:28.245Z Dev:Eleventy:Template new Template('./src/humors/levels.md')
+2024-09-30T17:47:28.245Z Dev:Eleventy:Template './src/humors/levels.md' getData
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/levels.md')
+2024-09-30T17:47:28.245Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.245Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.246Z Eleventy:TemplateData getLocalDataPaths('./src/humors/levels.md'): [ './src/humors/levels.11tydata.js', './src/humors/levels.11tydata.cjs', './src/humors/levels.11tydata.json', './src/humors/levels.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.246Z Eleventy:TemplateWriter ./src/humors/levels.md adding to template map.
+2024-09-30T17:47:28.246Z Dev:Eleventy:Template new Template('./src/humors/likes.md')
+2024-09-30T17:47:28.246Z Dev:Eleventy:Template './src/humors/likes.md' getData
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/likes.md')
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.246Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.246Z Eleventy:TemplateData getLocalDataPaths('./src/humors/likes.md'): [ './src/humors/likes.11tydata.js', './src/humors/likes.11tydata.cjs', './src/humors/likes.11tydata.json', './src/humors/likes.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.246Z Eleventy:TemplateWriter ./src/humors/likes.md adding to template map.
+2024-09-30T17:47:28.246Z Dev:Eleventy:Template new Template('./src/humors/lingerie.md')
+2024-09-30T17:47:28.246Z Dev:Eleventy:Template './src/humors/lingerie.md' getData
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/lingerie.md')
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.246Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.246Z Eleventy:TemplateData getLocalDataPaths('./src/humors/lingerie.md'): [ './src/humors/lingerie.11tydata.js', './src/humors/lingerie.11tydata.cjs', './src/humors/lingerie.11tydata.json', './src/humors/lingerie.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.246Z Eleventy:TemplateWriter ./src/humors/lingerie.md adding to template map.
+2024-09-30T17:47:28.246Z Dev:Eleventy:Template new Template('./src/humors/lion-tourists.md')
+2024-09-30T17:47:28.246Z Dev:Eleventy:Template './src/humors/lion-tourists.md' getData
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/lion-tourists.md')
+2024-09-30T17:47:28.246Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.247Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.247Z Eleventy:TemplateData getLocalDataPaths('./src/humors/lion-tourists.md'): [ './src/humors/lion-tourists.11tydata.js', './src/humors/lion-tourists.11tydata.cjs', './src/humors/lion-tourists.11tydata.json', './src/humors/lion-tourists.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.247Z Eleventy:TemplateWriter ./src/humors/lion-tourists.md adding to template map.
+2024-09-30T17:47:28.247Z Dev:Eleventy:Template new Template('./src/humors/maid.md')
+2024-09-30T17:47:28.247Z Dev:Eleventy:Template './src/humors/maid.md' getData
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/maid.md')
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.247Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.247Z Eleventy:TemplateData getLocalDataPaths('./src/humors/maid.md'): [ './src/humors/maid.11tydata.js', './src/humors/maid.11tydata.cjs', './src/humors/maid.11tydata.json', './src/humors/maid.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.247Z Eleventy:TemplateWriter ./src/humors/maid.md adding to template map.
+2024-09-30T17:47:28.247Z Dev:Eleventy:Template new Template('./src/humors/meteo.md')
+2024-09-30T17:47:28.247Z Dev:Eleventy:Template './src/humors/meteo.md' getData
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/meteo.md')
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.247Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.247Z Eleventy:TemplateData getLocalDataPaths('./src/humors/meteo.md'): [ './src/humors/meteo.11tydata.js', './src/humors/meteo.11tydata.cjs', './src/humors/meteo.11tydata.json', './src/humors/meteo.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.247Z Eleventy:TemplateWriter ./src/humors/meteo.md adding to template map.
+2024-09-30T17:47:28.247Z Dev:Eleventy:Template new Template('./src/humors/mockery.md')
+2024-09-30T17:47:28.247Z Dev:Eleventy:Template './src/humors/mockery.md' getData
+2024-09-30T17:47:28.247Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/mockery.md')
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.248Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.248Z Eleventy:TemplateData getLocalDataPaths('./src/humors/mockery.md'): [ './src/humors/mockery.11tydata.js', './src/humors/mockery.11tydata.cjs', './src/humors/mockery.11tydata.json', './src/humors/mockery.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.248Z Eleventy:TemplateWriter ./src/humors/mockery.md adding to template map.
+2024-09-30T17:47:28.248Z Dev:Eleventy:Template new Template('./src/humors/modern-girl.md')
+2024-09-30T17:47:28.248Z Dev:Eleventy:Template './src/humors/modern-girl.md' getData
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/modern-girl.md')
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.248Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.248Z Eleventy:TemplateData getLocalDataPaths('./src/humors/modern-girl.md'): [ './src/humors/modern-girl.11tydata.js', './src/humors/modern-girl.11tydata.cjs', './src/humors/modern-girl.11tydata.json', './src/humors/modern-girl.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.248Z Eleventy:TemplateWriter ./src/humors/modern-girl.md adding to template map.
+2024-09-30T17:47:28.248Z Dev:Eleventy:Template new Template('./src/humors/newton.md')
+2024-09-30T17:47:28.248Z Dev:Eleventy:Template './src/humors/newton.md' getData
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/newton.md')
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.248Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.248Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.249Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.249Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.249Z Eleventy:TemplateData getLocalDataPaths('./src/humors/newton.md'): [ './src/humors/newton.11tydata.js', './src/humors/newton.11tydata.cjs', './src/humors/newton.11tydata.json', './src/humors/newton.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.249Z Eleventy:TemplateWriter ./src/humors/newton.md adding to template map.
+2024-09-30T17:47:28.249Z Dev:Eleventy:Template new Template('./src/humors/night-life.md')
+2024-09-30T17:47:28.249Z Dev:Eleventy:Template './src/humors/night-life.md' getData
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/night-life.md')
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.250Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.250Z Eleventy:TemplateData getLocalDataPaths('./src/humors/night-life.md'): [ './src/humors/night-life.11tydata.js', './src/humors/night-life.11tydata.cjs', './src/humors/night-life.11tydata.json', './src/humors/night-life.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.250Z Eleventy:TemplateWriter ./src/humors/night-life.md adding to template map.
+2024-09-30T17:47:28.250Z Dev:Eleventy:Template new Template('./src/humors/nudno.md')
+2024-09-30T17:47:28.250Z Dev:Eleventy:Template './src/humors/nudno.md' getData
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/nudno.md')
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.250Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.250Z Eleventy:TemplateData getLocalDataPaths('./src/humors/nudno.md'): [ './src/humors/nudno.11tydata.js', './src/humors/nudno.11tydata.cjs', './src/humors/nudno.11tydata.json', './src/humors/nudno.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.250Z Eleventy:TemplateWriter ./src/humors/nudno.md adding to template map.
+2024-09-30T17:47:28.250Z Dev:Eleventy:Template new Template('./src/humors/oberegnist.md')
+2024-09-30T17:47:28.250Z Dev:Eleventy:Template './src/humors/oberegnist.md' getData
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/oberegnist.md')
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.250Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.250Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.251Z Eleventy:TemplateData getLocalDataPaths('./src/humors/oberegnist.md'): [ './src/humors/oberegnist.11tydata.js', './src/humors/oberegnist.11tydata.cjs', './src/humors/oberegnist.11tydata.json', './src/humors/oberegnist.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.251Z Eleventy:TemplateWriter ./src/humors/oberegnist.md adding to template map.
+2024-09-30T17:47:28.251Z Dev:Eleventy:Template new Template('./src/humors/odeyavol.md')
+2024-09-30T17:47:28.251Z Dev:Eleventy:Template './src/humors/odeyavol.md' getData
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/odeyavol.md')
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.251Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.251Z Eleventy:TemplateData getLocalDataPaths('./src/humors/odeyavol.md'): [ './src/humors/odeyavol.11tydata.js', './src/humors/odeyavol.11tydata.cjs', './src/humors/odeyavol.11tydata.json', './src/humors/odeyavol.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.251Z Eleventy:TemplateWriter ./src/humors/odeyavol.md adding to template map.
+2024-09-30T17:47:28.251Z Dev:Eleventy:Template new Template('./src/humors/pain.md')
+2024-09-30T17:47:28.251Z Dev:Eleventy:Template './src/humors/pain.md' getData
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/pain.md')
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.251Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.251Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.251Z Eleventy:TemplateData getLocalDataPaths('./src/humors/pain.md'): [ './src/humors/pain.11tydata.js', './src/humors/pain.11tydata.cjs', './src/humors/pain.11tydata.json', './src/humors/pain.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.251Z Eleventy:TemplateWriter ./src/humors/pain.md adding to template map.
+2024-09-30T17:47:28.251Z Dev:Eleventy:Template new Template('./src/humors/pantomims.md')
+2024-09-30T17:47:28.252Z Dev:Eleventy:Template './src/humors/pantomims.md' getData
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/pantomims.md')
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.252Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.252Z Eleventy:TemplateData getLocalDataPaths('./src/humors/pantomims.md'): [ './src/humors/pantomims.11tydata.js', './src/humors/pantomims.11tydata.cjs', './src/humors/pantomims.11tydata.json', './src/humors/pantomims.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.252Z Eleventy:TemplateWriter ./src/humors/pantomims.md adding to template map.
+2024-09-30T17:47:28.252Z Dev:Eleventy:Template new Template('./src/humors/pets.md')
+2024-09-30T17:47:28.252Z Dev:Eleventy:Template './src/humors/pets.md' getData
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/pets.md')
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.252Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.252Z Eleventy:TemplateData getLocalDataPaths('./src/humors/pets.md'): [ './src/humors/pets.11tydata.js', './src/humors/pets.11tydata.cjs', './src/humors/pets.11tydata.json', './src/humors/pets.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.252Z Eleventy:TemplateWriter ./src/humors/pets.md adding to template map.
+2024-09-30T17:47:28.252Z Dev:Eleventy:Template new Template('./src/humors/poem.md')
+2024-09-30T17:47:28.252Z Dev:Eleventy:Template './src/humors/poem.md' getData
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/poem.md')
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.252Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.252Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.252Z Eleventy:TemplateData getLocalDataPaths('./src/humors/poem.md'): [ './src/humors/poem.11tydata.js', './src/humors/poem.11tydata.cjs', './src/humors/poem.11tydata.json', './src/humors/poem.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.252Z Eleventy:TemplateWriter ./src/humors/poem.md adding to template map.
+2024-09-30T17:47:28.253Z Dev:Eleventy:Template new Template('./src/humors/poem2.md')
+2024-09-30T17:47:28.253Z Dev:Eleventy:Template './src/humors/poem2.md' getData
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/poem2.md')
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.253Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.253Z Eleventy:TemplateData getLocalDataPaths('./src/humors/poem2.md'): [ './src/humors/poem2.11tydata.js', './src/humors/poem2.11tydata.cjs', './src/humors/poem2.11tydata.json', './src/humors/poem2.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.253Z Eleventy:TemplateWriter ./src/humors/poem2.md adding to template map.
+2024-09-30T17:47:28.253Z Dev:Eleventy:Template new Template('./src/humors/police-dog.md')
+2024-09-30T17:47:28.253Z Dev:Eleventy:Template './src/humors/police-dog.md' getData
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/police-dog.md')
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.253Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.253Z Eleventy:TemplateData getLocalDataPaths('./src/humors/police-dog.md'): [ './src/humors/police-dog.11tydata.js', './src/humors/police-dog.11tydata.cjs', './src/humors/police-dog.11tydata.json', './src/humors/police-dog.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.253Z Eleventy:TemplateWriter ./src/humors/police-dog.md adding to template map.
+2024-09-30T17:47:28.253Z Dev:Eleventy:Template new Template('./src/humors/pornhub.md')
+2024-09-30T17:47:28.253Z Dev:Eleventy:Template './src/humors/pornhub.md' getData
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/pornhub.md')
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.253Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.253Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.253Z Eleventy:TemplateData getLocalDataPaths('./src/humors/pornhub.md'): [ './src/humors/pornhub.11tydata.js', './src/humors/pornhub.11tydata.cjs', './src/humors/pornhub.11tydata.json', './src/humors/pornhub.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.253Z Eleventy:TemplateWriter ./src/humors/pornhub.md adding to template map.
+2024-09-30T17:47:28.253Z Dev:Eleventy:Template new Template('./src/humors/president.md')
+2024-09-30T17:47:28.254Z Dev:Eleventy:Template './src/humors/president.md' getData
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/president.md')
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.254Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.254Z Eleventy:TemplateData getLocalDataPaths('./src/humors/president.md'): [ './src/humors/president.11tydata.js', './src/humors/president.11tydata.cjs', './src/humors/president.11tydata.json', './src/humors/president.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.254Z Eleventy:TemplateWriter ./src/humors/president.md adding to template map.
+2024-09-30T17:47:28.254Z Dev:Eleventy:Template new Template('./src/humors/radical.md')
+2024-09-30T17:47:28.254Z Dev:Eleventy:Template './src/humors/radical.md' getData
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/radical.md')
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.254Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.254Z Eleventy:TemplateData getLocalDataPaths('./src/humors/radical.md'): [ './src/humors/radical.11tydata.js', './src/humors/radical.11tydata.cjs', './src/humors/radical.11tydata.json', './src/humors/radical.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.254Z Eleventy:TemplateWriter ./src/humors/radical.md adding to template map.
+2024-09-30T17:47:28.254Z Dev:Eleventy:Template new Template('./src/humors/sacrifice.md')
+2024-09-30T17:47:28.254Z Dev:Eleventy:Template './src/humors/sacrifice.md' getData
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/sacrifice.md')
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.254Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.254Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.254Z Eleventy:TemplateData getLocalDataPaths('./src/humors/sacrifice.md'): [ './src/humors/sacrifice.11tydata.js', './src/humors/sacrifice.11tydata.cjs', './src/humors/sacrifice.11tydata.json', './src/humors/sacrifice.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.254Z Eleventy:TemplateWriter ./src/humors/sacrifice.md adding to template map.
+2024-09-30T17:47:28.254Z Dev:Eleventy:Template new Template('./src/humors/second-view.md')
+2024-09-30T17:47:28.254Z Dev:Eleventy:Template './src/humors/second-view.md' getData
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/second-view.md')
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.255Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.255Z Eleventy:TemplateData getLocalDataPaths('./src/humors/second-view.md'): [ './src/humors/second-view.11tydata.js', './src/humors/second-view.11tydata.cjs', './src/humors/second-view.11tydata.json', './src/humors/second-view.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.255Z Eleventy:TemplateWriter ./src/humors/second-view.md adding to template map.
+2024-09-30T17:47:28.255Z Dev:Eleventy:Template new Template('./src/humors/seeds.md')
+2024-09-30T17:47:28.255Z Dev:Eleventy:Template './src/humors/seeds.md' getData
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/seeds.md')
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.255Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.255Z Eleventy:TemplateData getLocalDataPaths('./src/humors/seeds.md'): [ './src/humors/seeds.11tydata.js', './src/humors/seeds.11tydata.cjs', './src/humors/seeds.11tydata.json', './src/humors/seeds.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.255Z Eleventy:TemplateWriter ./src/humors/seeds.md adding to template map.
+2024-09-30T17:47:28.255Z Dev:Eleventy:Template new Template('./src/humors/seriously.md')
+2024-09-30T17:47:28.255Z Dev:Eleventy:Template './src/humors/seriously.md' getData
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/seriously.md')
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.255Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.255Z Eleventy:TemplateData getLocalDataPaths('./src/humors/seriously.md'): [ './src/humors/seriously.11tydata.js', './src/humors/seriously.11tydata.cjs', './src/humors/seriously.11tydata.json', './src/humors/seriously.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.255Z Eleventy:TemplateWriter ./src/humors/seriously.md adding to template map.
+2024-09-30T17:47:28.255Z Dev:Eleventy:Template new Template('./src/humors/sex-game.md')
+2024-09-30T17:47:28.255Z Dev:Eleventy:Template './src/humors/sex-game.md' getData
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/sex-game.md')
+2024-09-30T17:47:28.255Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.256Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.256Z Eleventy:TemplateData getLocalDataPaths('./src/humors/sex-game.md'): [ './src/humors/sex-game.11tydata.js', './src/humors/sex-game.11tydata.cjs', './src/humors/sex-game.11tydata.json', './src/humors/sex-game.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.256Z Eleventy:TemplateWriter ./src/humors/sex-game.md adding to template map.
+2024-09-30T17:47:28.256Z Dev:Eleventy:Template new Template('./src/humors/sin.md')
+2024-09-30T17:47:28.256Z Dev:Eleventy:Template './src/humors/sin.md' getData
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/sin.md')
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.256Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.256Z Eleventy:TemplateData getLocalDataPaths('./src/humors/sin.md'): [ './src/humors/sin.11tydata.js', './src/humors/sin.11tydata.cjs', './src/humors/sin.11tydata.json', './src/humors/sin.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.256Z Eleventy:TemplateWriter ./src/humors/sin.md adding to template map.
+2024-09-30T17:47:28.256Z Dev:Eleventy:Template new Template('./src/humors/skeletons.md')
+2024-09-30T17:47:28.256Z Dev:Eleventy:Template './src/humors/skeletons.md' getData
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/skeletons.md')
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.256Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.256Z Eleventy:TemplateData getLocalDataPaths('./src/humors/skeletons.md'): [ './src/humors/skeletons.11tydata.js', './src/humors/skeletons.11tydata.cjs', './src/humors/skeletons.11tydata.json', './src/humors/skeletons.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.256Z Eleventy:TemplateWriter ./src/humors/skeletons.md adding to template map.
+2024-09-30T17:47:28.256Z Dev:Eleventy:Template new Template('./src/humors/skum.md')
+2024-09-30T17:47:28.256Z Dev:Eleventy:Template './src/humors/skum.md' getData
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/skum.md')
+2024-09-30T17:47:28.256Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.257Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.257Z Eleventy:TemplateData getLocalDataPaths('./src/humors/skum.md'): [ './src/humors/skum.11tydata.js', './src/humors/skum.11tydata.cjs', './src/humors/skum.11tydata.json', './src/humors/skum.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.257Z Eleventy:TemplateWriter ./src/humors/skum.md adding to template map.
+2024-09-30T17:47:28.257Z Dev:Eleventy:Template new Template('./src/humors/slight-malaise.md')
+2024-09-30T17:47:28.257Z Dev:Eleventy:Template './src/humors/slight-malaise.md' getData
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/slight-malaise.md')
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.257Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.257Z Eleventy:TemplateData getLocalDataPaths('./src/humors/slight-malaise.md'): [ './src/humors/slight-malaise.11tydata.js', './src/humors/slight-malaise.11tydata.cjs', './src/humors/slight-malaise.11tydata.json', './src/humors/slight-malaise.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.257Z Eleventy:TemplateWriter ./src/humors/slight-malaise.md adding to template map.
+2024-09-30T17:47:28.257Z Dev:Eleventy:Template new Template('./src/humors/speak-clearly.md')
+2024-09-30T17:47:28.257Z Dev:Eleventy:Template './src/humors/speak-clearly.md' getData
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/speak-clearly.md')
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.257Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.257Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.257Z Eleventy:TemplateData getLocalDataPaths('./src/humors/speak-clearly.md'): [ './src/humors/speak-clearly.11tydata.js', './src/humors/speak-clearly.11tydata.cjs', './src/humors/speak-clearly.11tydata.json', './src/humors/speak-clearly.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.257Z Eleventy:TemplateWriter ./src/humors/speak-clearly.md adding to template map.
+2024-09-30T17:47:28.257Z Dev:Eleventy:Template new Template('./src/humors/strange-love.md')
+2024-09-30T17:47:28.257Z Dev:Eleventy:Template './src/humors/strange-love.md' getData
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/strange-love.md')
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.258Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.258Z Eleventy:TemplateData getLocalDataPaths('./src/humors/strange-love.md'): [ './src/humors/strange-love.11tydata.js', './src/humors/strange-love.11tydata.cjs', './src/humors/strange-love.11tydata.json', './src/humors/strange-love.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.258Z Eleventy:TemplateWriter ./src/humors/strange-love.md adding to template map.
+2024-09-30T17:47:28.258Z Dev:Eleventy:Template new Template('./src/humors/strong-women.md')
+2024-09-30T17:47:28.258Z Dev:Eleventy:Template './src/humors/strong-women.md' getData
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/strong-women.md')
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.258Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.258Z Eleventy:TemplateData getLocalDataPaths('./src/humors/strong-women.md'): [ './src/humors/strong-women.11tydata.js', './src/humors/strong-women.11tydata.cjs', './src/humors/strong-women.11tydata.json', './src/humors/strong-women.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.258Z Eleventy:TemplateWriter ./src/humors/strong-women.md adding to template map.
+2024-09-30T17:47:28.258Z Dev:Eleventy:Template new Template('./src/humors/stupid-dead.md')
+2024-09-30T17:47:28.258Z Dev:Eleventy:Template './src/humors/stupid-dead.md' getData
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/stupid-dead.md')
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.258Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.258Z Eleventy:TemplateData getLocalDataPaths('./src/humors/stupid-dead.md'): [ './src/humors/stupid-dead.11tydata.js', './src/humors/stupid-dead.11tydata.cjs', './src/humors/stupid-dead.11tydata.json', './src/humors/stupid-dead.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.258Z Eleventy:TemplateWriter ./src/humors/stupid-dead.md adding to template map.
+2024-09-30T17:47:28.258Z Dev:Eleventy:Template new Template('./src/humors/surveillance.md')
+2024-09-30T17:47:28.258Z Dev:Eleventy:Template './src/humors/surveillance.md' getData
+2024-09-30T17:47:28.258Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/surveillance.md')
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.259Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.259Z Eleventy:TemplateData getLocalDataPaths('./src/humors/surveillance.md'): [ './src/humors/surveillance.11tydata.js', './src/humors/surveillance.11tydata.cjs', './src/humors/surveillance.11tydata.json', './src/humors/surveillance.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.259Z Eleventy:TemplateWriter ./src/humors/surveillance.md adding to template map.
+2024-09-30T17:47:28.259Z Dev:Eleventy:Template new Template('./src/humors/susanin.md')
+2024-09-30T17:47:28.259Z Dev:Eleventy:Template './src/humors/susanin.md' getData
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/susanin.md')
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.259Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.259Z Eleventy:TemplateData getLocalDataPaths('./src/humors/susanin.md'): [ './src/humors/susanin.11tydata.js', './src/humors/susanin.11tydata.cjs', './src/humors/susanin.11tydata.json', './src/humors/susanin.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.259Z Eleventy:TemplateWriter ./src/humors/susanin.md adding to template map.
+2024-09-30T17:47:28.259Z Dev:Eleventy:Template new Template('./src/humors/suspicion.md')
+2024-09-30T17:47:28.259Z Dev:Eleventy:Template './src/humors/suspicion.md' getData
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/suspicion.md')
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.259Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.259Z Eleventy:TemplateData getLocalDataPaths('./src/humors/suspicion.md'): [ './src/humors/suspicion.11tydata.js', './src/humors/suspicion.11tydata.cjs', './src/humors/suspicion.11tydata.json', './src/humors/suspicion.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.259Z Eleventy:TemplateWriter ./src/humors/suspicion.md adding to template map.
+2024-09-30T17:47:28.259Z Dev:Eleventy:Template new Template('./src/humors/tea.md')
+2024-09-30T17:47:28.259Z Dev:Eleventy:Template './src/humors/tea.md' getData
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/tea.md')
+2024-09-30T17:47:28.259Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.260Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.260Z Eleventy:TemplateData getLocalDataPaths('./src/humors/tea.md'): [ './src/humors/tea.11tydata.js', './src/humors/tea.11tydata.cjs', './src/humors/tea.11tydata.json', './src/humors/tea.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.260Z Eleventy:TemplateWriter ./src/humors/tea.md adding to template map.
+2024-09-30T17:47:28.260Z Dev:Eleventy:Template new Template('./src/humors/thanks.md')
+2024-09-30T17:47:28.260Z Dev:Eleventy:Template './src/humors/thanks.md' getData
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/thanks.md')
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.260Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.260Z Eleventy:TemplateData getLocalDataPaths('./src/humors/thanks.md'): [ './src/humors/thanks.11tydata.js', './src/humors/thanks.11tydata.cjs', './src/humors/thanks.11tydata.json', './src/humors/thanks.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.260Z Eleventy:TemplateWriter ./src/humors/thanks.md adding to template map.
+2024-09-30T17:47:28.260Z Dev:Eleventy:Template new Template('./src/humors/true.md')
+2024-09-30T17:47:28.260Z Dev:Eleventy:Template './src/humors/true.md' getData
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/true.md')
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.260Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.260Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.260Z Eleventy:TemplateData getLocalDataPaths('./src/humors/true.md'): [ './src/humors/true.11tydata.js', './src/humors/true.11tydata.cjs', './src/humors/true.11tydata.json', './src/humors/true.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.260Z Eleventy:TemplateWriter ./src/humors/true.md adding to template map.
+2024-09-30T17:47:28.260Z Dev:Eleventy:Template new Template('./src/humors/twice.md')
+2024-09-30T17:47:28.261Z Dev:Eleventy:Template './src/humors/twice.md' getData
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/twice.md')
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.261Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.261Z Eleventy:TemplateData getLocalDataPaths('./src/humors/twice.md'): [ './src/humors/twice.11tydata.js', './src/humors/twice.11tydata.cjs', './src/humors/twice.11tydata.json', './src/humors/twice.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.261Z Eleventy:TemplateWriter ./src/humors/twice.md adding to template map.
+2024-09-30T17:47:28.261Z Dev:Eleventy:Template new Template('./src/humors/vaz.md')
+2024-09-30T17:47:28.261Z Dev:Eleventy:Template './src/humors/vaz.md' getData
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/vaz.md')
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.261Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.261Z Eleventy:TemplateData getLocalDataPaths('./src/humors/vaz.md'): [ './src/humors/vaz.11tydata.js', './src/humors/vaz.11tydata.cjs', './src/humors/vaz.11tydata.json', './src/humors/vaz.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.261Z Eleventy:TemplateWriter ./src/humors/vaz.md adding to template map.
+2024-09-30T17:47:28.261Z Dev:Eleventy:Template new Template('./src/humors/vine.md')
+2024-09-30T17:47:28.261Z Dev:Eleventy:Template './src/humors/vine.md' getData
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/vine.md')
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.261Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.261Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.261Z Eleventy:TemplateData getLocalDataPaths('./src/humors/vine.md'): [ './src/humors/vine.11tydata.js', './src/humors/vine.11tydata.cjs', './src/humors/vine.11tydata.json', './src/humors/vine.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.261Z Eleventy:TemplateWriter ./src/humors/vine.md adding to template map.
+2024-09-30T17:47:28.261Z Dev:Eleventy:Template new Template('./src/humors/who-are-you.md')
+2024-09-30T17:47:28.262Z Dev:Eleventy:Template './src/humors/who-are-you.md' getData
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/who-are-you.md')
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.262Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.262Z Eleventy:TemplateData getLocalDataPaths('./src/humors/who-are-you.md'): [ './src/humors/who-are-you.11tydata.js', './src/humors/who-are-you.11tydata.cjs', './src/humors/who-are-you.11tydata.json', './src/humors/who-are-you.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.262Z Eleventy:TemplateWriter ./src/humors/who-are-you.md adding to template map.
+2024-09-30T17:47:28.262Z Dev:Eleventy:Template new Template('./src/humors/zen-buddhism.md')
+2024-09-30T17:47:28.262Z Dev:Eleventy:Template './src/humors/zen-buddhism.md' getData
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/zen-buddhism.md')
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.262Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.262Z Eleventy:TemplateData getLocalDataPaths('./src/humors/zen-buddhism.md'): [ './src/humors/zen-buddhism.11tydata.js', './src/humors/zen-buddhism.11tydata.cjs', './src/humors/zen-buddhism.11tydata.json', './src/humors/zen-buddhism.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.262Z Eleventy:TemplateWriter ./src/humors/zen-buddhism.md adding to template map.
+2024-09-30T17:47:28.262Z Dev:Eleventy:Template new Template('./src/humors/zgadala.md')
+2024-09-30T17:47:28.262Z Dev:Eleventy:Template './src/humors/zgadala.md' getData
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/humors/zgadala.md')
+2024-09-30T17:47:28.262Z Dev:Eleventy:TemplateData parsed.dir: './src/humors'
+2024-09-30T17:47:28.263Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData allDirs: [ './src/humors', './src' ]
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData dirStr: './src/humors'; inputDir: './'
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.263Z Eleventy:TemplateData getLocalDataPaths('./src/humors/zgadala.md'): [ './src/humors/zgadala.11tydata.js', './src/humors/zgadala.11tydata.cjs', './src/humors/zgadala.11tydata.json', './src/humors/zgadala.json', './src/humors/humors.11tydata.js', './src/humors/humors.11tydata.cjs', './src/humors/humors.11tydata.json', './src/humors/humors.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.263Z Eleventy:TemplateWriter ./src/humors/zgadala.md adding to template map.
+2024-09-30T17:47:28.263Z Dev:Eleventy:Template new Template('./src/it-posts/2011-07-08-human_comp.md')
+2024-09-30T17:47:28.263Z Dev:Eleventy:Template './src/it-posts/2011-07-08-human_comp.md' getData
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2011-07-08-human_comp.md')
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData parsed.dir: './src/it-posts'
+2024-09-30T17:47:28.263Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData allDirs: [ './src/it-posts', './src' ]
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData dirStr: './src/it-posts'; inputDir: './'
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.263Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2011-07-08-human_comp.md'): [ './src/it-posts/2011-07-08-human_comp.11tydata.js', './src/it-posts/2011-07-08-human_comp.11tydata.cjs', './src/it-posts/2011-07-08-human_comp.11tydata.json', './src/it-posts/2011-07-08-human_comp.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.263Z Eleventy:TemplateWriter ./src/it-posts/2011-07-08-human_comp.md adding to template map.
+2024-09-30T17:47:28.263Z Dev:Eleventy:Template new Template('./src/it-posts/2012-03-12-perenos-nalashtruvan.md')
+2024-09-30T17:47:28.263Z Dev:Eleventy:Template './src/it-posts/2012-03-12-perenos-nalashtruvan.md' getData
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2012-03-12-perenos-nalashtruvan.md')
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData parsed.dir: './src/it-posts'
+2024-09-30T17:47:28.263Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData allDirs: [ './src/it-posts', './src' ]
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData dirStr: './src/it-posts'; inputDir: './'
+2024-09-30T17:47:28.263Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.263Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2012-03-12-perenos-nalashtruvan.md'): [ './src/it-posts/2012-03-12-perenos-nalashtruvan.11tydata.js', './src/it-posts/2012-03-12-perenos-nalashtruvan.11tydata.cjs', './src/it-posts/2012-03-12-perenos-nalashtruvan.11tydata.json', './src/it-posts/2012-03-12-perenos-nalashtruvan.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.263Z Eleventy:TemplateWriter ./src/it-posts/2012-03-12-perenos-nalashtruvan.md adding to template map.
+2024-09-30T17:47:28.263Z Dev:Eleventy:Template new Template('./src/it-posts/2024-04-11-comp-binary-optimisation.md')
+2024-09-30T17:47:28.264Z Dev:Eleventy:Template './src/it-posts/2024-04-11-comp-binary-optimisation.md' getData
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2024-04-11-comp-binary-optimisation.md')
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData parsed.dir: './src/it-posts'
+2024-09-30T17:47:28.264Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData allDirs: [ './src/it-posts', './src' ]
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData dirStr: './src/it-posts'; inputDir: './'
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.264Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2024-04-11-comp-binary-optimisation.md'): [ './src/it-posts/2024-04-11-comp-binary-optimisation.11tydata.js', './src/it-posts/2024-04-11-comp-binary-optimisation.11tydata.cjs', './src/it-posts/2024-04-11-comp-binary-optimisation.11tydata.json', './src/it-posts/2024-04-11-comp-binary-optimisation.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.264Z Eleventy:TemplateWriter ./src/it-posts/2024-04-11-comp-binary-optimisation.md adding to template map.
+2024-09-30T17:47:28.264Z Dev:Eleventy:Template new Template('./src/it-posts/2024-09-23-eleventy-steps-1.md')
+2024-09-30T17:47:28.264Z Dev:Eleventy:Template './src/it-posts/2024-09-23-eleventy-steps-1.md' getData
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2024-09-23-eleventy-steps-1.md')
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData parsed.dir: './src/it-posts'
+2024-09-30T17:47:28.264Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData allDirs: [ './src/it-posts', './src' ]
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData dirStr: './src/it-posts'; inputDir: './'
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.264Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/2024-09-23-eleventy-steps-1.md'): [ './src/it-posts/2024-09-23-eleventy-steps-1.11tydata.js', './src/it-posts/2024-09-23-eleventy-steps-1.11tydata.cjs', './src/it-posts/2024-09-23-eleventy-steps-1.11tydata.json', './src/it-posts/2024-09-23-eleventy-steps-1.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.264Z Eleventy:TemplateWriter ./src/it-posts/2024-09-23-eleventy-steps-1.md adding to template map.
+2024-09-30T17:47:28.264Z Dev:Eleventy:Template new Template('./src/it-posts/all-in-memory.md')
+2024-09-30T17:47:28.264Z Dev:Eleventy:Template './src/it-posts/all-in-memory.md' getData
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/it-posts/all-in-memory.md')
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData parsed.dir: './src/it-posts'
+2024-09-30T17:47:28.264Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.264Z Dev:Eleventy:TemplateData allDirs: [ './src/it-posts', './src' ]
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData dirStr: './src/it-posts'; inputDir: './'
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.265Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/all-in-memory.md'): [ './src/it-posts/all-in-memory.11tydata.js', './src/it-posts/all-in-memory.11tydata.cjs', './src/it-posts/all-in-memory.11tydata.json', './src/it-posts/all-in-memory.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.265Z Eleventy:TemplateWriter ./src/it-posts/all-in-memory.md adding to template map.
+2024-09-30T17:47:28.265Z Dev:Eleventy:Template new Template('./src/it-posts/super-git.md')
+2024-09-30T17:47:28.265Z Dev:Eleventy:Template './src/it-posts/super-git.md' getData
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/it-posts/super-git.md')
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData parsed.dir: './src/it-posts'
+2024-09-30T17:47:28.265Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData allDirs: [ './src/it-posts', './src' ]
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData dirStr: './src/it-posts'; inputDir: './'
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.265Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/super-git.md'): [ './src/it-posts/super-git.11tydata.js', './src/it-posts/super-git.11tydata.cjs', './src/it-posts/super-git.11tydata.json', './src/it-posts/super-git.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.265Z Eleventy:TemplateWriter ./src/it-posts/super-git.md adding to template map.
+2024-09-30T17:47:28.265Z Dev:Eleventy:Template new Template('./src/it-posts/u_hmaru.md')
+2024-09-30T17:47:28.265Z Dev:Eleventy:Template './src/it-posts/u_hmaru.md' getData
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/it-posts/u_hmaru.md')
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData parsed.dir: './src/it-posts'
+2024-09-30T17:47:28.265Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData allDirs: [ './src/it-posts', './src' ]
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData dirStr: './src/it-posts'; inputDir: './'
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.265Z Eleventy:TemplateData getLocalDataPaths('./src/it-posts/u_hmaru.md'): [ './src/it-posts/u_hmaru.11tydata.js', './src/it-posts/u_hmaru.11tydata.cjs', './src/it-posts/u_hmaru.11tydata.json', './src/it-posts/u_hmaru.json', './src/it-posts/it-posts.11tydata.js', './src/it-posts/it-posts.11tydata.cjs', './src/it-posts/it-posts.11tydata.json', './src/it-posts/it-posts.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.265Z Eleventy:TemplateWriter ./src/it-posts/u_hmaru.md adding to template map.
+2024-09-30T17:47:28.265Z Dev:Eleventy:Template new Template('./src/_includes/partials/meta-info.njk')
+2024-09-30T17:47:28.265Z Dev:Eleventy:Template './src/_includes/partials/meta-info.njk' getData
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/_includes/partials/meta-info.njk')
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData parsed.dir: './src/_includes/partials'
+2024-09-30T17:47:28.265Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.265Z Dev:Eleventy:TemplateData allDirs: [ './src/_includes/partials', './src/_includes', './src' ]
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData dirStr: './src/_includes/partials'; inputDir: './'
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData dirStr: './src/_includes'; inputDir: './'
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.266Z Eleventy:TemplateData getLocalDataPaths('./src/_includes/partials/meta-info.njk'): [ './src/_includes/partials/meta-info.11tydata.js', './src/_includes/partials/meta-info.11tydata.cjs', './src/_includes/partials/meta-info.11tydata.json', './src/_includes/partials/meta-info.json', './src/_includes/partials/partials.11tydata.js', './src/_includes/partials/partials.11tydata.cjs', './src/_includes/partials/partials.11tydata.json', './src/_includes/partials/partials.json', './src/_includes/_includes.11tydata.js', './src/_includes/_includes.11tydata.cjs', './src/_includes/_includes.11tydata.json', './src/_includes/_includes.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.266Z Eleventy:TemplateWriter ./src/_includes/partials/meta-info.njk adding to template map.
+2024-09-30T17:47:28.266Z Dev:Eleventy:Template new Template('./src/_includes/partials/paginations.njk')
+2024-09-30T17:47:28.266Z Dev:Eleventy:Template './src/_includes/partials/paginations.njk' getData
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/_includes/partials/paginations.njk')
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData parsed.dir: './src/_includes/partials'
+2024-09-30T17:47:28.266Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData allDirs: [ './src/_includes/partials', './src/_includes', './src' ]
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData dirStr: './src/_includes/partials'; inputDir: './'
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData dirStr: './src/_includes'; inputDir: './'
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.266Z Eleventy:TemplateData getLocalDataPaths('./src/_includes/partials/paginations.njk'): [ './src/_includes/partials/paginations.11tydata.js', './src/_includes/partials/paginations.11tydata.cjs', './src/_includes/partials/paginations.11tydata.json', './src/_includes/partials/paginations.json', './src/_includes/partials/partials.11tydata.js', './src/_includes/partials/partials.11tydata.cjs', './src/_includes/partials/partials.11tydata.json', './src/_includes/partials/partials.json', './src/_includes/_includes.11tydata.js', './src/_includes/_includes.11tydata.cjs', './src/_includes/_includes.11tydata.json', './src/_includes/_includes.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.266Z Eleventy:TemplateWriter ./src/_includes/partials/paginations.njk adding to template map.
+2024-09-30T17:47:28.266Z Dev:Eleventy:Template new Template('./src/_includes/partials/site-bottom.njk')
+2024-09-30T17:47:28.266Z Dev:Eleventy:Template './src/_includes/partials/site-bottom.njk' getData
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/_includes/partials/site-bottom.njk')
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData parsed.dir: './src/_includes/partials'
+2024-09-30T17:47:28.266Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData allDirs: [ './src/_includes/partials', './src/_includes', './src' ]
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData dirStr: './src/_includes/partials'; inputDir: './'
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData dirStr: './src/_includes'; inputDir: './'
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.266Z Eleventy:TemplateData getLocalDataPaths('./src/_includes/partials/site-bottom.njk'): [ './src/_includes/partials/site-bottom.11tydata.js', './src/_includes/partials/site-bottom.11tydata.cjs', './src/_includes/partials/site-bottom.11tydata.json', './src/_includes/partials/site-bottom.json', './src/_includes/partials/partials.11tydata.js', './src/_includes/partials/partials.11tydata.cjs', './src/_includes/partials/partials.11tydata.json', './src/_includes/partials/partials.json', './src/_includes/_includes.11tydata.js', './src/_includes/_includes.11tydata.cjs', './src/_includes/_includes.11tydata.json', './src/_includes/_includes.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.266Z Eleventy:TemplateWriter ./src/_includes/partials/site-bottom.njk adding to template map.
+2024-09-30T17:47:28.266Z Dev:Eleventy:Template new Template('./src/_includes/partials/site-head.njk')
+2024-09-30T17:47:28.266Z Dev:Eleventy:Template './src/_includes/partials/site-head.njk' getData
+2024-09-30T17:47:28.266Z Dev:Eleventy:TemplateData getLocalDataPaths('./src/_includes/partials/site-head.njk')
+2024-09-30T17:47:28.267Z Dev:Eleventy:TemplateData parsed.dir: './src/_includes/partials'
+2024-09-30T17:47:28.267Z Eleventy:TemplateData Using [ '.11tydata', '' ] suffixes to find data files.
+2024-09-30T17:47:28.267Z Dev:Eleventy:TemplateData allDirs: [ './src/_includes/partials', './src/_includes', './src' ]
+2024-09-30T17:47:28.267Z Dev:Eleventy:TemplateData dirStr: './src/_includes/partials'; inputDir: './'
+2024-09-30T17:47:28.267Z Dev:Eleventy:TemplateData dirStr: './src/_includes'; inputDir: './'
+2024-09-30T17:47:28.267Z Dev:Eleventy:TemplateData dirStr: './src'; inputDir: './'
+2024-09-30T17:47:28.267Z Eleventy:TemplateData getLocalDataPaths('./src/_includes/partials/site-head.njk'): [ './src/_includes/partials/site-head.11tydata.js', './src/_includes/partials/site-head.11tydata.cjs', './src/_includes/partials/site-head.11tydata.json', './src/_includes/partials/site-head.json', './src/_includes/partials/partials.11tydata.js', './src/_includes/partials/partials.11tydata.cjs', './src/_includes/partials/partials.11tydata.json', './src/_includes/partials/partials.json', './src/_includes/_includes.11tydata.js', './src/_includes/_includes.11tydata.cjs', './src/_includes/_includes.11tydata.json', './src/_includes/_includes.json', './src/src.11tydata.js', './src/src.11tydata.cjs', './src/src.11tydata.json', './src/src.json' ]
+2024-09-30T17:47:28.267Z Eleventy:TemplateWriter ./src/_includes/partials/site-head.njk adding to template map.
+2024-09-30T17:47:28.293Z Eleventy:FastGlobManager Glob search ('global-data') searching for: [ './_data/**/*.{json,cjs,js}' ]
+2024-09-30T17:47:28.297Z Dev:Eleventy:Template './README.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.325Z Dev:Eleventy:Template './copyright.html' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.326Z Dev:Eleventy:Template './google0afb6c2dac0007ec.html' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.326Z Dev:Eleventy:Template './googlea9079d5fce490705.html' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.326Z Dev:Eleventy:Template './src/commons.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.340Z Dev:Eleventy:Template './src/eleventy-start.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.340Z Dev:Eleventy:Template './src/humors.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.340Z Dev:Eleventy:Template './src/index.html' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.340Z Dev:Eleventy:Template './src/it-posts.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.341Z Dev:Eleventy:Template './src/ru.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.341Z Dev:Eleventy:Template './src/tags.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.341Z Dev:Eleventy:Template './src/думка.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.341Z Dev:Eleventy:Template './src/сюжет.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.341Z Dev:Eleventy:Template './src/ідея.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.341Z Dev:Eleventy:Template './src/_includes/collection-list.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.341Z Dev:Eleventy:Template './src/_includes/collection-posts.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.342Z Dev:Eleventy:Template './src/_includes/humor.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.342Z Dev:Eleventy:Template './src/_includes/layout.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.342Z Dev:Eleventy:Template './src/_includes/post.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.342Z Dev:Eleventy:Template './src/_includes/partials/meta-info.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.342Z Dev:Eleventy:Template './src/_includes/partials/paginations.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.342Z Dev:Eleventy:Template './src/_includes/partials/site-bottom.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.342Z Dev:Eleventy:Template './src/_includes/partials/site-head.njk' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.361Z Eleventy:TemplatePassthrough Copying individual file 'src/style.css'
+2024-09-30T17:47:28.361Z Dev:Eleventy:Template './src/commons/2024-03-01-pokarannya_za_dobri_spravy.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.361Z Dev:Eleventy:Template './src/commons/2024-05-02-trademak-Gnizdo-Nest.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.362Z Dev:Eleventy:Template './src/commons/2024-04-10-ustriystvo_dlya_tishiny.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.362Z Dev:Eleventy:Template './src/commons/2024-05-13-manyak-control.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.362Z Dev:Eleventy:Template './src/commons/full-control.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.362Z Dev:Eleventy:Template './src/commons/portret_tvorcya.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.362Z Dev:Eleventy:Template './src/commons/poglyad-na-stvorenntya.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.363Z Dev:Eleventy:Template './src/commons/space-lottery.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.363Z Dev:Eleventy:Template './src/commons/sperm-from-the-past.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.363Z Dev:Eleventy:Template './src/humors/2021-05-08-french-frog.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.363Z Dev:Eleventy:Template './src/humors/2021-08-09-one-hundred-suite.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.363Z Dev:Eleventy:Template './src/humors/alko.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.364Z Dev:Eleventy:Template './src/humors/all.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.364Z Dev:Eleventy:Template './src/humors/all2.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.364Z Dev:Eleventy:Template './src/humors/analysis.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.364Z Dev:Eleventy:Template './src/humors/answers.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.364Z Dev:Eleventy:Template './src/humors/antisemit.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.364Z Dev:Eleventy:Template './src/humors/approach-to-women.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.364Z Dev:Eleventy:Template './src/humors/articulate.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.365Z Dev:Eleventy:Template './src/humors/bad-feeding.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.365Z Dev:Eleventy:Template './src/humors/atomic-beer.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.365Z Dev:Eleventy:Template './src/humors/bald.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.365Z Dev:Eleventy:Template './src/humors/bed-throw.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.365Z Dev:Eleventy:Template './src/humors/bezzahyst.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.365Z Dev:Eleventy:Template './src/humors/career.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.365Z Dev:Eleventy:Template './src/humors/clean.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.366Z Dev:Eleventy:Template './src/humors/carry.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.366Z Dev:Eleventy:Template './src/humors/clearly.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.366Z Dev:Eleventy:Template './src/humors/compare.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.366Z Dev:Eleventy:Template './src/humors/covid.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.366Z Dev:Eleventy:Template './src/humors/dirty-kiss.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.366Z Dev:Eleventy:Template './src/humors/disappointment.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.366Z Dev:Eleventy:Template './src/humors/double.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.367Z Dev:Eleventy:Template './src/humors/duble-pleasure.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.367Z Dev:Eleventy:Template './src/humors/exam.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.367Z Dev:Eleventy:Template './src/humors/guesswork.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.367Z Dev:Eleventy:Template './src/humors/fortunately.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.368Z Dev:Eleventy:Template './src/humors/hand-wash.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.368Z Dev:Eleventy:Template './src/humors/humanity.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.368Z Dev:Eleventy:Template './src/humors/jewish-telegram.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.368Z Dev:Eleventy:Template './src/humors/judaism.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.368Z Dev:Eleventy:Template './src/humors/kamasutra-battle.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.368Z Dev:Eleventy:Template './src/humors/kva.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.368Z Dev:Eleventy:Template './src/humors/left.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.369Z Dev:Eleventy:Template './src/humors/lenkocites.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.369Z Dev:Eleventy:Template './src/humors/levels.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.369Z Dev:Eleventy:Template './src/humors/likes.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.369Z Dev:Eleventy:Template './src/humors/maid.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.369Z Dev:Eleventy:Template './src/humors/mockery.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.369Z Dev:Eleventy:Template './src/humors/meteo.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.369Z Dev:Eleventy:Template './src/humors/modern-girl.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.370Z Dev:Eleventy:Template './src/humors/newton.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.370Z Dev:Eleventy:Template './src/humors/night-life.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.370Z Dev:Eleventy:Template './src/humors/nudno.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.370Z Dev:Eleventy:Template './src/humors/oberegnist.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.370Z Dev:Eleventy:Template './src/humors/odeyavol.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.370Z Dev:Eleventy:Template './src/humors/pantomims.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.370Z Dev:Eleventy:Template './src/humors/pain.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.371Z Dev:Eleventy:Template './src/humors/pets.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.371Z Dev:Eleventy:Template './src/humors/poem.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.371Z Dev:Eleventy:Template './src/humors/poem2.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.371Z Dev:Eleventy:Template './src/humors/police-dog.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.371Z Dev:Eleventy:Template './src/humors/pornhub.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.371Z Dev:Eleventy:Template './src/humors/president.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.371Z Dev:Eleventy:Template './src/humors/lion-tourists.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.371Z Dev:Eleventy:Template './src/humors/radical.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.372Z Dev:Eleventy:Template './src/humors/sacrifice.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.372Z Dev:Eleventy:Template './src/humors/seeds.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.372Z Dev:Eleventy:Template './src/humors/lingerie.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.372Z Dev:Eleventy:Template './src/humors/seriously.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.372Z Dev:Eleventy:Template './src/humors/second-view.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.372Z Dev:Eleventy:Template './src/humors/sin.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.372Z Dev:Eleventy:Template './src/humors/sex-game.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.373Z Dev:Eleventy:Template './src/humors/slight-malaise.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.373Z Dev:Eleventy:Template './src/humors/skeletons.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.373Z Dev:Eleventy:Template './src/humors/skum.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.373Z Dev:Eleventy:Template './src/humors/speak-clearly.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.373Z Dev:Eleventy:Template './src/humors/strange-love.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.373Z Dev:Eleventy:Template './src/humors/stupid-dead.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.373Z Dev:Eleventy:Template './src/humors/strong-women.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.374Z Dev:Eleventy:Template './src/humors/surveillance.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.374Z Dev:Eleventy:Template './src/humors/susanin.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.374Z Dev:Eleventy:Template './src/humors/suspicion.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.374Z Dev:Eleventy:Template './src/humors/tea.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.374Z Dev:Eleventy:Template './src/humors/thanks.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.374Z Dev:Eleventy:Template './src/humors/true.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.374Z Dev:Eleventy:Template './src/humors/twice.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.375Z Dev:Eleventy:Template './src/humors/who-are-you.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.375Z Dev:Eleventy:Template './src/humors/vaz.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.375Z Dev:Eleventy:Template './src/humors/vine.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.375Z Dev:Eleventy:Template './src/humors/zen-buddhism.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.375Z Dev:Eleventy:Template './src/humors/zgadala.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.375Z Dev:Eleventy:Template './src/it-posts/2024-09-23-eleventy-steps-1.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.375Z Dev:Eleventy:Template './src/it-posts/2011-07-08-human_comp.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.376Z Dev:Eleventy:Template './src/it-posts/2024-04-11-comp-binary-optimisation.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.376Z Dev:Eleventy:Template './src/it-posts/2012-03-12-perenos-nalashtruvan.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.376Z Dev:Eleventy:Template './src/it-posts/all-in-memory.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.376Z Dev:Eleventy:Template './src/it-posts/super-git.md' getData getTemplateDirectoryData and getGlobalData
+2024-09-30T17:47:28.376Z Dev:Eleventy:Template './src/it-posts/u_hmaru.md' getData getTemplateDirectoryData and getGlobalData
+[11ty] Problem writing Eleventy templates:
+[11ty] TemplateLayoutPathResolver directory does not exist for layout.njk: _includes (via Error)
+2024-09-30T17:47:28.388Z Eleventy:EleventyErrorHandler (error stack): Error: TemplateLayoutPathResolver directory does not exist for layout.njk: _includes
+    at TemplateLayoutPathResolver.findFileName (/home/kmserg/studying/blog/kmserg.skupiy.biz.ua/node_modules/@11ty/eleventy/src/TemplateLayoutPathResolver.js:105:13)
+    at TemplateLayoutPathResolver.init (/home/kmserg/studying/blog/kmserg.skupiy.biz.ua/node_modules/@11ty/eleventy/src/TemplateLayoutPathResolver.js:74:28)
+    at new TemplateLayoutPathResolver (/home/kmserg/studying/blog/kmserg.skupiy.biz.ua/node_modules/@11ty/eleventy/src/TemplateLayoutPathResolver.js:21:10)
+    at new TemplateLayout (/home/kmserg/studying/blog/kmserg.skupiy.biz.ua/node_modules/@11ty/eleventy/src/TemplateLayout.js:17:20)
+    at TemplateLayout.getTemplate (/home/kmserg/studying/blog/kmserg.skupiy.biz.ua/node_modules/@11ty/eleventy/src/TemplateLayout.js:57:20)
+    at Template.getLayout (/home/kmserg/studying/blog/kmserg.skupiy.biz.ua/node_modules/@11ty/eleventy/src/Template.js:146:27)
+    at Template.getData (/home/kmserg/studying/blog/kmserg.skupiy.biz.ua/node_modules/@11ty/eleventy/src/Template.js:376:25)
+    at async TemplateMap.add (/home/kmserg/studying/blog/kmserg.skupiy.biz.ua/node_modules/@11ty/eleventy/src/TemplateMap.js:65:16)
+    at async Promise.all (index 4)
+    at async TemplateWriter._createTemplateMap (/home/kmserg/studying/blog/kmserg.skupiy.biz.ua/node_modules/@11ty/eleventy/src/TemplateWriter.js:325:5)
+2024-09-30T17:47:28.389Z Eleventy:Logger Benchmark     20ms   9%     1× (Aggregate) Searching the file system (templates)
+2024-09-30T17:47:28.389Z Eleventy:Benchmark Benchmark     20ms   9%     1× (Aggregate) Searching the file system (templates)
+2024-09-30T17:47:28.389Z Eleventy:Logger Benchmark     79ms  36%     1× (Aggregate) Searching the file system (passthrough)
+2024-09-30T17:47:28.389Z Eleventy:Benchmark Benchmark     79ms  36%     1× (Aggregate) Searching the file system (passthrough)
+2024-09-30T17:47:28.389Z Eleventy:Benchmark Benchmark      7ms   3%     1× (Aggregate) Searching the file system (data)
+2024-09-30T17:47:28.389Z Eleventy:Benchmark Benchmark      0ms   0%   122× (Aggregate) Template Read
+[11ty] Wrote 0 files in 0.20 seconds (v2.0.1)
+2024-09-30T17:47:28.389Z Eleventy Finished writing templates.
+2024-09-30T17:47:28.389Z Eleventy 
+      Getting frustrated? Have a suggestion/feature request/feedback?
+      I want to hear it! Open an issue: https://github.com/11ty/eleventy/issues/new
+2024-09-30T17:47:28.394Z Eleventy:TemplatePassthrough Copying individual file 'copyright.html'
+2024-09-30T17:47:28.394Z Eleventy:TemplatePassthrough Copying individual file 'google0afb6c2dac0007ec.html'
+2024-09-30T17:47:28.394Z Eleventy:TemplatePassthrough Copying individual file 'googlea9079d5fce490705.html'
+2024-09-30T17:47:28.396Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './copyright.html' of 2024-08-31T05:55:06.858Z (from 1725083706858.831)
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './copyright.html' getData mergedData
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './copyright.html' getMapped()
+2024-09-30T17:47:28.397Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './googlea9079d5fce490705.html' of 2024-08-31T19:03:42.819Z (from 1725131022819.338)
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './googlea9079d5fce490705.html' getData mergedData
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './googlea9079d5fce490705.html' getMapped()
+2024-09-30T17:47:28.397Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './google0afb6c2dac0007ec.html' of 2024-08-31T05:55:06.858Z (from 1725083706858.831)
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './google0afb6c2dac0007ec.html' getData mergedData
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './google0afb6c2dac0007ec.html' getMapped()
+2024-09-30T17:47:28.397Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/_includes/collection-posts.njk' of 2024-08-31T05:55:06.682Z (from 1725083706682.8335)
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './src/_includes/collection-posts.njk' getData mergedData
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './src/_includes/collection-posts.njk' getMapped()
+2024-09-30T17:47:28.397Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/_includes/layout.njk' of 2024-08-31T05:55:06.682Z (from 1725083706682.8335)
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './src/_includes/layout.njk' getData mergedData
+2024-09-30T17:47:28.397Z Dev:Eleventy:Template './src/_includes/layout.njk' getMapped()
+2024-09-30T17:47:28.398Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/_includes/partials/meta-info.njk' of 2024-09-25T08:40:56.563Z (from 1727253656563.5964)
+2024-09-30T17:47:28.398Z Dev:Eleventy:Template './src/_includes/partials/meta-info.njk' getData mergedData
+2024-09-30T17:47:28.398Z Dev:Eleventy:Template './src/_includes/partials/meta-info.njk' getMapped()
+2024-09-30T17:47:28.398Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/_includes/partials/paginations.njk' of 2024-09-07T08:54:18.042Z (from 1725699258042.1086)
+2024-09-30T17:47:28.398Z Dev:Eleventy:Template './src/_includes/partials/paginations.njk' getData mergedData
+2024-09-30T17:47:28.398Z Dev:Eleventy:Template './src/_includes/partials/paginations.njk' getMapped()
+2024-09-30T17:47:28.398Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/_includes/partials/site-bottom.njk' of 2024-08-31T05:55:06.698Z (from 1725083706698.8333)
+2024-09-30T17:47:28.398Z Dev:Eleventy:Template './src/_includes/partials/site-bottom.njk' getData mergedData
+2024-09-30T17:47:28.398Z Dev:Eleventy:Template './src/_includes/partials/site-bottom.njk' getMapped()
+2024-09-30T17:47:28.398Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/_includes/partials/site-head.njk' of 2024-08-31T05:55:06.698Z (from 1725083706698.8333)
+2024-09-30T17:47:28.398Z Dev:Eleventy:Template './src/_includes/partials/site-head.njk' getData mergedData
+2024-09-30T17:47:28.398Z Dev:Eleventy:Template './src/_includes/partials/site-head.njk' getMapped()
+2024-09-30T17:47:28.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/Book_Page.png'
+2024-09-30T17:47:28.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/In_Side.png'
+2024-09-30T17:47:28.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/avatar.svg'
+2024-09-30T17:47:28.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/ezk247xt9n8b1.jpg'
+2024-09-30T17:47:28.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/femida.jpg'
+2024-09-30T17:47:28.418Z Eleventy:TemplatePassthrough Copying individual file 'src/images/four-bit-adder.png'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo1-s.png'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo2-s.png'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo3-ss.png'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo3-s.png'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/gnizdo4-s.png'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/meta/favicon.svg'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/meta/social-share.png'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/pole1.png'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/pole2.png'
+2024-09-30T17:47:28.419Z Eleventy:TemplatePassthrough Copying individual file 'src/images/pole3.png'
+2024-09-30T17:47:28.420Z Eleventy:TemplatePassthrough Copying individual file 'src/images/ranks.png'
+2024-09-30T17:47:28.420Z Eleventy:TemplatePassthrough Copying individual file 'src/images/silence.png'
+2024-09-30T17:47:28.420Z Eleventy:TemplatePassthrough Copying individual file 'src/images/silence1.png'
+2024-09-30T17:47:28.420Z Eleventy:TemplatePassthrough Copying individual file 'src/images/waves.png'
+2024-09-30T17:47:28.421Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/style.css' to passthrough copy conflict map, from 'src/style.css'
+2024-09-30T17:47:28.421Z Eleventy:TemplatePassthroughManager Copied './src/style.css' (1 files)
+2024-09-30T17:47:28.427Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/copyright.html' to passthrough copy conflict map, from 'copyright.html'
+2024-09-30T17:47:28.427Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/google0afb6c2dac0007ec.html' to passthrough copy conflict map, from 'google0afb6c2dac0007ec.html'
+2024-09-30T17:47:28.427Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/googlea9079d5fce490705.html' to passthrough copy conflict map, from 'googlea9079d5fce490705.html'
+2024-09-30T17:47:28.427Z Eleventy:TemplatePassthroughManager Copied './*.html' (3 files)
+2024-09-30T17:47:28.445Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/Book_Page.png' to passthrough copy conflict map, from 'src/images/Book_Page.png'
+2024-09-30T17:47:28.445Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/In_Side.png' to passthrough copy conflict map, from 'src/images/In_Side.png'
+2024-09-30T17:47:28.445Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/avatar.svg' to passthrough copy conflict map, from 'src/images/avatar.svg'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/ezk247xt9n8b1.jpg' to passthrough copy conflict map, from 'src/images/ezk247xt9n8b1.jpg'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/femida.jpg' to passthrough copy conflict map, from 'src/images/femida.jpg'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/four-bit-adder.png' to passthrough copy conflict map, from 'src/images/four-bit-adder.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/gnizdo1-s.png' to passthrough copy conflict map, from 'src/images/gnizdo1-s.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/gnizdo2-s.png' to passthrough copy conflict map, from 'src/images/gnizdo2-s.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/gnizdo3-ss.png' to passthrough copy conflict map, from 'src/images/gnizdo3-ss.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/gnizdo3-s.png' to passthrough copy conflict map, from 'src/images/gnizdo3-s.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/gnizdo4-s.png' to passthrough copy conflict map, from 'src/images/gnizdo4-s.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/meta/favicon.svg' to passthrough copy conflict map, from 'src/images/meta/favicon.svg'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/meta/social-share.png' to passthrough copy conflict map, from 'src/images/meta/social-share.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/pole1.png' to passthrough copy conflict map, from 'src/images/pole1.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/pole2.png' to passthrough copy conflict map, from 'src/images/pole2.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/pole3.png' to passthrough copy conflict map, from 'src/images/pole3.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/ranks.png' to passthrough copy conflict map, from 'src/images/ranks.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/silence.png' to passthrough copy conflict map, from 'src/images/silence.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/silence1.png' to passthrough copy conflict map, from 'src/images/silence1.png'
+2024-09-30T17:47:28.446Z Dev:Eleventy:TemplatePassthroughManager Adding '_site/src/images/waves.png' to passthrough copy conflict map, from 'src/images/waves.png'
+2024-09-30T17:47:28.446Z Eleventy:TemplatePassthroughManager Copied './src/images/' (20 files)
+2024-09-30T17:47:28.447Z Eleventy:TemplatePassthroughManager TemplatePassthrough copy finished. Current count: 24
+2024-09-30T17:47:29.120Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './README.md' of 2024-08-31T05:55:06.934Z (from 1725083706934.83)
+2024-09-30T17:47:29.120Z Dev:Eleventy:Template './README.md' getData mergedData
+2024-09-30T17:47:29.120Z Dev:Eleventy:Template './README.md' getMapped()
+2024-09-30T17:47:29.121Z Eleventy:Template Template date: using file’s 'birthtimeMs' for './src/_includes/collection-list.njk' of 2024-08-31T05:55:06.686Z (from 1725083706686.8335)
+2024-09-30T17:47:29.121Z Dev:Eleventy:Template './src/_includes/collection-list.njk' getData mergedData
+2024-09-30T17:47:29.121Z Dev:Eleventy:Template './src/_includes/collection-list.njk' getMapped()

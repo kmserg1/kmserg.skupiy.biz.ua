@@ -1,0 +1,18 @@
+---
+layout: layout.njk
+title: Tags
+pagination:
+  data: collections.tags
+  size: 5
+  alias: tags
+---
+
+<h1>{{ title }}</h1>
+
+<ul>
+{% for tag in collections.tags %}
+{% if  tag != "nav" %}
+    <li><a href="/{{ tag | url }}">{{ tag }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>

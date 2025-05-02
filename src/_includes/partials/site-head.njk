@@ -1,0 +1,25 @@
+{% set navListItems = collections.nav | reverse %}
+
+<a href=/>
+  <img src="/images/avatar.svg" height="91%" alt="Shatiy avatar" />
+</a>
+
+
+<div class="SHRight">
+  <nav>
+    <ul>
+      {% for nav in navListItems  %}
+	      <li><a href="{{ nav.url | url }}">{{ nav.data.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="Ssearch">
+    <form action="https://www.google.co.uk/search" method="get" class="search">
+      <input type="hidden" name="q" id="q" value="site:http://kmserg.skupiy.biz.ua">
+      <input type="text" name="q" id="search-str"></p>
+      <button type="submit" class="submit">Пошук через Google</button>
+    </form>
+  </div>
+
+</div>

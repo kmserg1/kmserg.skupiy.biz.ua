@@ -1,0 +1,15 @@
+---
+layout: layout.njk
+title: Думка
+pagination:
+  data: collections.думка
+  size: 5
+  alias: думка
+paginationPrevText: 'Новіші'
+paginationNextText: 'Старіші'
+---
+
+<h1>{{ title }}</h1>
+
+{% set collection = collections.думка %}
+{% include "collection-posts.njk" %}

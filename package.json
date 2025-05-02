@@ -1,0 +1,31 @@
+{
+  "name": "eleventy-data",
+  "version": "1.0.0",
+  "description": "This is the repo used in my article on Architecting Data in Eleventy.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy --input=src",
+    "start": "npx eleventy --input=src --serve",
+    "watch": "npx eleventy --input=src --watch",
+    "debug": "DEBUG=* npx eleventy --input=src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmserg1/kmserg.skupiy.biz.ua.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kmserg1/kmserg.skupiy.biz.ua/issues"
+  },
+  "homepage": "https://github.com/kmserg1/kmserg.skupiy.biz.ua#readme",
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "debug": "^4.3.7",
+    "moment": "^2.30.1"
+  }
+}

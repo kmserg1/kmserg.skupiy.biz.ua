@@ -6,4 +6,4 @@ tags: ru
 
 Ехал Грека ... ... ... ... ... ... ... ... ... .. .... .. ... ... .. ... . .  
 
-![Ехал Грека](/images/greka.png)
+<image style="height: 100%;" src="/images/greka.png" alt="nest-sketch1">

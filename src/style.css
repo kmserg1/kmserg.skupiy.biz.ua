@@ -56,7 +56,13 @@ nav li {
   font-size: 70%;
   }
 
-
+.github {
+  display:inline;
+  font-size: 50%;
+  text-decoration: none;
+  font-family:'Lucida Console', monospace;
+  font-style: italic;
+  }
 
 
 .Ssearch {

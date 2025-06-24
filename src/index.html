@@ -3,9 +3,27 @@ layout: layout.njk
 title: Шатній С.О.
 ---
 
-<h1>Шатній Сергій Олександрович</h1>
+<h1>Шатній Сергій Олександрович&nbsp;&nbsp;&nbsp; <a class="github" href="https://github.com/kmserg1 " target="_blank"><span>github.com/kmserg1</span></a></h1>
 <p><i><font color="#007bb9"> 
-Сисадмін, песимістичний фатало-реаліст, змій, скорпіон
-</font></i></p>
-<p>Персональний сайт</p>
+Сисадмін, песимістичний фатало-реаліст, змій, скорпіон<br>
+<h2>Персональний сайт</h2>
 
+
+
+</font></i></p>
+
+
+<h3>Останні поповнення</h3>
+
+{% for item in collections.anyTag %}
+<div class="items">
+		<div class="itemLeft">
+			<a href="{{ item.url }}"> <small>{{ item.date | dateFilter }}<br>{{ item.time | timeFilter }} </small></a>
+		</div>
+		<div class="itemRight">
+			<a  href="{{ item.url }}"> <small>теги: {{ item.data.tags |  join }}</small> <br> <strong>{{ item.data.title }}</strong> 
+			</a>
+       		</div>
+</div>
+{% endfor %}
+<br>

@@ -5,12 +5,13 @@ layout: layout.njk
 {% set previousPost = collections.humors | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.humors | getNextCollectionItem(page) %}
 
+<br><br>
 Теги: 
 {% for tag in tags%}
     <a href="/{{ tag }}">{{ tag }}</a> &nbsp;
 {% endfor %}
 
-<br><br><br>
+<br>
  
 {% include "partials/prev-next.njk" %}
 

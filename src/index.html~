@@ -1,0 +1,28 @@
+---
+layout: layout.njk
+title: Шатній С.О.
+---
+
+<h1>Шатній Сергій Олександрович</h1>
+<p><i><font color="#007bb9"> 
+Сисадмін, песимістичний фатало-реаліст, змій, скорпіон<br>
+<h2>Персональний сайт</h2>
+
+<a href="https://github.com/kmserg1"> github.com/kmserg1</a>
+
+</font></i></p>
+
+
+<h2>Останні поповнення</h2>
+<ul>
+  {% for item in collections.tags %}
+    <li>
+      <span>{{ item.date | dateFilter }}</span>
+      <span>{{ item.tags }}</span>
+      <a href="{{ item.url }}">{{ item.data.title }}</a>
+    </li>
+    <br>
+  {% endfor %}
+</ul>
+
+
